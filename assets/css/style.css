@@ -2985,12 +2985,13 @@ footer {
   .footer-nav {
     padding-bottom: 50px;
   }
+  /* Fixed image for women's banner */
   .fiximg{
     margin-top: 32.3%;
   }
   
 }
-/* Fixed image for women's banner */
+
 
 /**
  * responsive larger than 1400px screen
