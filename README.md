@@ -135,4 +135,4 @@ These are just a few suggestions based on the provided HTML structure. The speci
 
 - Youssef: my account, login, register, view products
 
-- Karim:view blog, view product
+## Karim: View blog, view product
