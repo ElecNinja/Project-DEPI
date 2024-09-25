@@ -4,25 +4,19 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>About</title>
+    <title>Elite Wear</title>
 
-    <!--
-    - favicon
-  -->
+    <!--- favicon -->
     <link
       rel="shortcut icon"
       href="./assets/images/logo/Elite_icon.ico"
       type="image/x-icon"
     />
 
-    <!--
-    - custom css link
-  -->
+    <!--- custom css link -->
     <link rel="stylesheet" href="./assets/css/style.css" />
 
-    <!--
-    - google font link
-  -->
+    <!--- google font link -->
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link
@@ -34,84 +28,7 @@
   </head>
 
   <body>
-    <div class="bigcontainer">
-      <div class="overlay" data-overlay></div>
-
-      <!--
-    - MODAL - Subscribe Newsletter
-  -->
-
-      <div class="modal" data-modal>
-        <div class="modal-close-overlay" data-modal-overlay></div>
-
-        <div class="modal-content">
-          <button class="modal-close-btn" data-modal-close>
-            <ion-icon name="close-outline"></ion-icon>
-          </button>
-
-          <div class="newsletter-img">
-            <img
-              src="./assets/images/newsletter.png"
-              alt="subscribe newsletter"
-              width="400"
-              height="400"
-            />
-          </div>
-
-          <div class="newsletter">
-            <form action="#">
-              <div class="newsletter-header">
-                <h3 class="newsletter-title">Subscribe Newsletter.</h3>
-
-                <p class="newsletter-desc">
-                  Subscribe to get latest products and discount update.
-                </p>
-              </div>
-
-              <input
-                type="email"
-                name="email"
-                class="email-field"
-                placeholder="Email Address"
-                required
-              />
-
-              <button type="submit" class="btn-newsletter">Subscribe</button>
-            </form>
-          </div>
-        </div>
-      </div>
-
-      <!--
-    - NOTIFICATION TOAST
-  -->
-
-      <div class="notification-toast" data-toast>
-        <button class="toast-close-btn" data-toast-close>
-          <ion-icon name="close-outline"></ion-icon>
-        </button>
-
-        <div class="toast-banner">
-          <img
-            src="./assets/images/products/jacket-3.jpg"
-            alt="Jacket"
-            width="80"
-            height="70"
-          />
-        </div>
-
-        <div class="toast-detail">
-          <p class="toast-message">Someone in Men's Wear just bought</p>
-
-          <p class="toast-title">Jackets</p>
-
-          <p class="toast-meta"><time datetime="PT2M">2 Minutes</time> ago</p>
-        </div>
-      </div>
-
-      <!--
-    - HEADER
-  -->
+    <main>
       <header>
         <div class="header-top">
           <div class="container">
@@ -506,175 +423,284 @@
         </nav>
       </header>
 
-      <!--- MAIN -->
-      <main>
-        <div class="product-container">
-          <div class="container">
-            <!--- SIDEBAR -->
-            <div class="sidebar has-scrollbar" data-mobile-menu>
-              <div class="sidebar-category">
-                <div class="sidebar-top">
-                  <h2 class="sidebar-title">Category</h2>
-                  <button class="sidebar-close-btn" data-mobile-menu-close-btn>
-                    <ion-icon name="close-outline"></ion-icon>
-                  </button>
-                </div>
+      <div class="container">
+        <h1>Terms and Conditions</h1>
+        <p>
+          Welcome to <strong>Elite Wear</strong>. By accessing our website and
+          purchasing products, you agree to comply with and be bound by the
+          following terms and conditions. Please read them carefully before
+          making a purchase.
+        </p>
+
+        <h2>1. General Information</h2>
+        <ul>
+          <li>
+            <strong>1.1</strong> Elite Wear is an online store that offers a
+            variety of clothing items and accessories for sale.
+          </li>
+          <li>
+            <strong>1.2</strong> These terms and conditions govern your use of
+            our website and the purchase of products from us.
+          </li>
+          <li>
+            <strong>1.3</strong> By using this website and placing an order, you
+            confirm that you are at least 18 years old or using the site under
+            the supervision of a parent or legal guardian.
+          </li>
+        </ul>
+
+        <h2>2. Products and Pricing</h2>
+        <ul>
+          <li>
+            <strong>2.1</strong> All prices are displayed on our website and are
+            subject to change without prior notice.
+          </li>
+          <li>
+            <strong>2.2</strong> Prices are listed in [currency] and include
+            applicable taxes, unless otherwise stated.
+          </li>
+          <li>
+            <strong>2.3</strong> We strive to ensure that all product
+            descriptions, images, and prices are accurate; however, errors may
+            occur. We reserve the right to correct any inaccuracies or omissions
+            at any time without prior notice.
+          </li>
+        </ul>
+
+        <h2>3. Orders and Payments</h2>
+        <ul>
+          <li>
+            <strong>3.1</strong> By placing an order on Elite Wear, you agree to
+            provide accurate and up-to-date information.
+          </li>
+          <li>
+            <strong>3.2</strong> Payment for products must be made online
+            through our secure payment gateway.
+          </li>
+          <li>
+            <strong>3.3</strong> We accept [list of accepted payment methods,
+            e.g., credit cards, debit cards, PayPal, etc.].
+          </li>
+          <li>
+            <strong>3.4</strong> Elite Wear reserves the right to cancel any
+            order if fraudulent activity is suspected.
+          </li>
+        </ul>
+
+        <h2>4. Shipping and Delivery</h2>
+        <ul>
+          <li>
+            <strong>4.1</strong> Orders will be processed and shipped within
+            [number of days] business days after payment is received.
+          </li>
+          <li>
+            <strong>4.2</strong> We ship to [list of countries or regions].
+            Shipping fees and estimated delivery times vary based on your
+            location and the shipping method selected at checkout.
+          </li>
+          <li>
+            <strong>4.3</strong> We are not responsible for delays caused by
+            customs, postal services, or other circumstances beyond our control.
+          </li>
+        </ul>
+
+        <h2>5. Returns and Refunds</h2>
+        <ul>
+          <li>
+            <strong>5.1</strong> If you are not satisfied with your purchase,
+            you may request a return or exchange within [number of days] days of
+            receiving your order.
+          </li>
+          <li>
+            <strong>5.2</strong> To be eligible for a return, items must be
+            unused, in their original packaging, and in the same condition that
+            you received them.
+          </li>
+          <li>
+            <strong>5.3</strong> Refunds will be processed once we receive and
+            inspect the returned item. Refunds will be issued to the original
+            payment method.
+          </li>
+        </ul>
+
+        <h2>6. Limitation of Liability</h2>
+        <ul>
+          <li>
+            <strong>6.1</strong> Elite Wear will not be liable for any damages
+            that occur as a result of using our products or website.
+          </li>
+          <li>
+            <strong>6.2</strong> We do not guarantee that our website will be
+            available at all times or free from errors.
+          </li>
+        </ul>
+
+        <h2>7. Changes to Terms and Conditions</h2>
+        <ul>
+          <li>
+            <strong>7.1</strong> We reserve the right to update or modify these
+            terms and conditions at any time without prior notice.
+          </li>
+          <li>
+            <strong>7.2</strong> By continuing to use our website after changes
+            are made, you agree to be bound by the updated terms.
+          </li>
+        </ul>
+
+        <h2>8. Contact Information</h2>
+        <ul>
+          <li>
+            If you have any questions about these Terms and Conditions, please
+            contact us at
+            <a href="mailto:support@elitewear.com">support@elitewear.com</a>.
+          </li>
+        </ul>
+
+        <p>Last updated: [Date]</p>
+      </div>
+    </main>
+    <!-- Footer -->
+    <footer>
+      <div class="footer-nav">
+        <div class="container">
+          <ul class="footer-nav-list">
+            <li class="footer-nav-item">
+              <h2 class="nav-title">Categories</h2>
+            </li>
+
+            <li class="footer-nav-item">
+              <a href="/Category-men.html" class="footer-nav-link">Men's</a>
+            </li>
+            <li class="footer-nav-item">
+              <a href="/Category-women.html" class="footer-nav-link">Women's</a>
+            </li>
+          </ul>
+          <ul class="footer-nav-list">
+            <li class="footer-nav-item">
+              <h2 class="nav-title">Links</h2>
+            </li>
+
+            <li class="footer-nav-item">
+              <a href="/index.html" class="footer-nav-link">Home</a>
+            </li>
+
+            <li class="footer-nav-item">
+              <a href="/blog.html" class="footer-nav-link">Blog</a>
+            </li>
+            <li class="footer-nav-item">
+              <a href="/contact.html" class="footer-nav-link">Contact Us</a>
+            </li>
+          </ul>
+
+          <ul class="footer-nav-list">
+            <li class="footer-nav-item">
+              <h2 class="nav-title">Our Company</h2>
+            </li>
+
+            <li class="footer-nav-item">
+              <a href="/about.html" class="footer-nav-link">About Us</a>
+            </li>
+
+            <li class="footer-nav-item">
+              <a href="/terms-conditions.html" class="footer-nav-link"
+                >Terms and conditions</a
+              >
+            </li>
+          </ul>
+
+          <ul class="footer-nav-list">
+            <li class="footer-nav-item">
+              <h2 class="nav-title">Contact</h2>
+            </li>
+
+            <li class="footer-nav-item flex">
+              <div class="icon-box">
+                <ion-icon name="location-outline"></ion-icon>
               </div>
-            </div>
-            <!-- product-featured -->
-            <div class="product-featured">
-              <!-- You Code Here -->
-            </div>
-          </div>
+
+              <address class="content">Alexandria, Egypt</address>
+            </li>
+
+            <li class="footer-nav-item flex">
+              <div class="icon-box">
+                <ion-icon name="call-outline"></ion-icon>
+              </div>
+
+              <a href="tel:+607936-8058" class="footer-nav-link"
+                >+201000000000</a
+              >
+            </li>
+
+            <li class="footer-nav-item flex">
+              <div class="icon-box">
+                <ion-icon name="mail-outline"></ion-icon>
+              </div>
+
+              <a href="mailto:example@gmail.com" class="footer-nav-link"
+                >info@elitewer.com</a
+              >
+            </li>
+          </ul>
+
+          <ul class="footer-nav-list">
+            <li class="footer-nav-item">
+              <h2 class="nav-title">Follow Us</h2>
+            </li>
+
+            <li>
+              <ul class="social-link">
+                <li class="footer-nav-item">
+                  <a href="#" class="footer-nav-link">
+                    <ion-icon name="logo-facebook"></ion-icon>
+                  </a>
+                </li>
+
+                <li class="footer-nav-item">
+                  <a href="#" class="footer-nav-link">
+                    <ion-icon name="logo-twitter"></ion-icon>
+                  </a>
+                </li>
+
+                <li class="footer-nav-item">
+                  <a href="#" class="footer-nav-link">
+                    <ion-icon name="logo-linkedin"></ion-icon>
+                  </a>
+                </li>
+
+                <li class="footer-nav-item">
+                  <a href="#" class="footer-nav-link">
+                    <ion-icon name="logo-instagram"></ion-icon>
+                  </a>
+                </li>
+              </ul>
+            </li>
+          </ul>
         </div>
-      </main>
+      </div>
 
-      <!-- Footer -->
-      <footer>
-        <div class="footer-nav">
-          <div class="container">
-            <ul class="footer-nav-list">
-              <li class="footer-nav-item">
-                <h2 class="nav-title">Categories</h2>
-              </li>
+      <div class="footer-bottom">
+        <div class="container">
+          <img
+            src="./assets/images/payment.png"
+            alt="payment method"
+            class="payment-img"
+          />
 
-              <li class="footer-nav-item">
-                <a href="/Category-men.html" class="footer-nav-link">Men's</a>
-              </li>
-              <li class="footer-nav-item">
-                <a href="/Category-women.html" class="footer-nav-link"
-                  >Women's</a
-                >
-              </li>
-            </ul>
-            <ul class="footer-nav-list">
-              <li class="footer-nav-item">
-                <h2 class="nav-title">Links</h2>
-              </li>
-
-              <li class="footer-nav-item">
-                <a href="/index.html" class="footer-nav-link">Home</a>
-              </li>
-
-              <li class="footer-nav-item">
-                <a href="/blog.html" class="footer-nav-link">Blog</a>
-              </li>
-              <li class="footer-nav-item">
-                <a href="/contact.html" class="footer-nav-link">Contact Us</a>
-              </li>
-            </ul>
-
-            <ul class="footer-nav-list">
-              <li class="footer-nav-item">
-                <h2 class="nav-title">Our Company</h2>
-              </li>
-
-              <li class="footer-nav-item">
-                <a href="/about.html" class="footer-nav-link">About Us</a>
-              </li>
-
-              <li class="footer-nav-item">
-                <a href="/terms-conditions.html" class="footer-nav-link"
-                  >Terms and conditions</a
-                >
-              </li>
-            </ul>
-
-            <ul class="footer-nav-list">
-              <li class="footer-nav-item">
-                <h2 class="nav-title">Contact</h2>
-              </li>
-
-              <li class="footer-nav-item flex">
-                <div class="icon-box">
-                  <ion-icon name="location-outline"></ion-icon>
-                </div>
-
-                <address class="content">Alexandria, Egypt</address>
-              </li>
-
-              <li class="footer-nav-item flex">
-                <div class="icon-box">
-                  <ion-icon name="call-outline"></ion-icon>
-                </div>
-
-                <a href="tel:+607936-8058" class="footer-nav-link"
-                  >+201000000000</a
-                >
-              </li>
-
-              <li class="footer-nav-item flex">
-                <div class="icon-box">
-                  <ion-icon name="mail-outline"></ion-icon>
-                </div>
-
-                <a href="mailto:example@gmail.com" class="footer-nav-link"
-                  >info@elitewer.com</a
-                >
-              </li>
-            </ul>
-
-            <ul class="footer-nav-list">
-              <li class="footer-nav-item">
-                <h2 class="nav-title">Follow Us</h2>
-              </li>
-
-              <li>
-                <ul class="social-link">
-                  <li class="footer-nav-item">
-                    <a href="#" class="footer-nav-link">
-                      <ion-icon name="logo-facebook"></ion-icon>
-                    </a>
-                  </li>
-
-                  <li class="footer-nav-item">
-                    <a href="#" class="footer-nav-link">
-                      <ion-icon name="logo-twitter"></ion-icon>
-                    </a>
-                  </li>
-
-                  <li class="footer-nav-item">
-                    <a href="#" class="footer-nav-link">
-                      <ion-icon name="logo-linkedin"></ion-icon>
-                    </a>
-                  </li>
-
-                  <li class="footer-nav-item">
-                    <a href="#" class="footer-nav-link">
-                      <ion-icon name="logo-instagram"></ion-icon>
-                    </a>
-                  </li>
-                </ul>
-              </li>
-            </ul>
-          </div>
+          <p class="copyright">&copy;DEPI - ALX1_SWD3_M1e</p>
         </div>
+      </div>
+    </footer>
 
-        <div class="footer-bottom">
-          <div class="container">
-            <img
-              src="./assets/images/payment.png"
-              alt="payment method"
-              class="payment-img"
-            />
-
-            <p class="copyright">&copy;DEPI - ALX1_SWD3_M1e</p>
-          </div>
-        </div>
-      </footer>
-
-      <!--- custom js link -->
-      <script src="./assets/js/script.js"></script>
-
-      <!--- ionicon link -->
-      <script
-        type="module"
-        src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"
-      ></script>
-      <script
-        nomodule
-        src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"
-      ></script>
-    </div>
+    <!--- custom js link -->
+    <script src="./assets/js/script.js"></script>
+    <!--- ionicon link -->
+    <script
+      type="module"
+      src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"
+    ></script>
+    <script
+      nomodule
+      src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"
+    ></script>
   </body>
 </html>
