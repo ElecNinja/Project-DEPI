@@ -4,7 +4,7 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Template Elite Wear</title>
+    <title>Categories</title>
 
     <!--
     - favicon
@@ -211,8 +211,11 @@
             </div>
 
             <div class="header-user-actions">
-              <button class="action-btn">
+              <button class="action-btn dropdown">
                 <ion-icon name="person-outline"></ion-icon>
+                <div class="dropdown-content">
+                  <a href="/My Account.html">Login</a>
+                </div>
               </button>
 
               <button class="action-btn">
@@ -228,9 +231,7 @@
           </div>
         </div>
 
-        <!-- 
-        CART TABLE CONTENT
-       -->
+        <!-- CART TABLE CONTENT -->
         <div class="cartTab">
           <h1>Shopping Cart</h1>
           <div class="listCart">
@@ -261,28 +262,12 @@
               </li>
 
               <li class="menu-category">
-                <a href="Category.html" class="menu-title">Categories</a>
+                <a href="Categories.html" class="menu-title">Categories</a>
 
                 <div class="dropdown-panel">
                   <ul class="dropdown-panel-list">
                     <li class="menu-title">
-                      <a href="#">Men's</a>
-                    </li>
-
-                    <li class="panel-list-item">
-                      <a href="#">Formal</a>
-                    </li>
-
-                    <li class="panel-list-item">
-                      <a href="#">Casual</a>
-                    </li>
-
-                    <li class="panel-list-item">
-                      <a href="#">Sports</a>
-                    </li>
-
-                    <li class="panel-list-item">
-                      <a href="#">Jacket</a>
+                      <a href="/Category men.html">Men's</a>
                     </li>
 
                     <li class="panel-list-item">
@@ -299,15 +284,7 @@
 
                   <ul class="dropdown-panel-list">
                     <li class="menu-title">
-                      <a href="#">Women's</a>
-                    </li>
-
-                    <li class="panel-list-item">
-                      <a href="#">Formal</a>
-                    </li>
-
-                    <li class="panel-list-item">
-                      <a href="#">Casual</a>
+                      <a href="/Category women.html">Women's</a>
                     </li>
 
                     <li class="panel-list-item">
@@ -323,45 +300,15 @@
                   </ul>
                 </div>
               </li>
-
               <li class="menu-category">
-                <a href="#" class="menu-title">Men's</a>
-
-                <ul class="dropdown-list">
-                  <li class="dropdown-item">
-                    <a href="#">Shirt</a>
-                  </li>
-
-                  <li class="dropdown-item">
-                    <a href="#">Shorts & Jeans</a>
-                  </li>
-
-                  <li class="dropdown-item">
-                    <a href="#">Safety Shoes</a>
-                  </li>
-
-                  <li class="dropdown-item">
-                    <a href="#">Wallet</a>
-                  </li>
-                </ul>
+                <a href="/about.html" class="menu-title">About</a>
               </li>
-
               <li class="menu-category">
-                <a href="#" class="menu-title">Women's</a>
-
-                <ul class="dropdown-list">
-                  <li class="dropdown-item">
-                    <a href="#">Dress & Frock</a>
-                  </li>
-                </ul>
+                <a href="/contact.html" class="menu-title">Contact</a>
               </li>
 
               <li class="menu-category">
                 <a href="blog.html" class="menu-title">Blog</a>
-              </li>
-
-              <li class="menu-category">
-                <a href="#" class="menu-title">Hot Offers</a>
               </li>
             </ul>
           </div>
@@ -559,97 +506,67 @@
           </div>
         </nav>
       </header>
-
-      <!--
-    - MAIN
-  -->
-
+      <!--- MAIN -->
       <main>
-        <div class="categories">
-          <h2>Categories</h2>
-          <div class="category-grid">
-            <div class="category-item">
-              <img src="images/men.jpg" alt="Men's Clothing" />
-              <h3>Men's Clothing</h3>
-              <a href="#">Shop Now</a>
+        <div class="product-container">
+          <div class="container">
+            <!--- SIDEBAR -->
+            <div class="sidebar has-scrollbar" data-mobile-menu>
+              <div class="sidebar-category">
+                <div class="sidebar-top">
+                  <h2 class="sidebar-title">Category</h2>
+                  <button class="sidebar-close-btn" data-mobile-menu-close-btn>
+                    <ion-icon name="close-outline"></ion-icon>
+                  </button>
+                </div>
+              </div>
             </div>
-            <div class="category-item">
-              <img src="images/women.jpg" alt="Women's Clothing" />
-              <h3>Women's Clothing</h3>
-              <a href="#">Shop Now</a>
-            </div>
-            <div class="category-item">
-              <img src="images/kids.jpg" alt="Kids' Clothing" />
-              <h3>Kids' Clothing</h3>
-              <a href="#">Shop Now</a>
-            </div>
-            <div class="category-item">
-              <img src="images/accessories.jpg" alt="Accessories" />
-              <h3>Accessories</h3>
-              <a href="#">Shop Now</a>
+            <!-- product-featured -->
+            <div class="product-featured">
+              <div class="categories">
+                <h2>Categories</h2>
+                <div class="category-grid">
+                  <div class="category-item">
+                    <img src="images/men.jpg" alt="Men's Clothing" />
+                    <h3>Men's Clothing</h3>
+                    <a href="#">Shop Now</a>
+                  </div>
+                  <div class="category-item">
+                    <img src="images/women.jpg" alt="Women's Clothing" />
+                    <h3>Women's Clothing</h3>
+                    <a href="#">Shop Now</a>
+                  </div>
+                  <div class="category-item">
+                    <img src="images/kids.jpg" alt="Kids' Clothing" />
+                    <h3>Kids' Clothing</h3>
+                    <a href="#">Shop Now</a>
+                  </div>
+                  <div class="category-item">
+                    <img src="images/accessories.jpg" alt="Accessories" />
+                    <h3>Accessories</h3>
+                    <a href="#">Shop Now</a>
+                  </div>
+                </div>
+              </div>
             </div>
           </div>
         </div>
       </main>
-      <!--
-    - FOOTER
-  -->
 
       <!-- Footer -->
       <footer>
-        <div class="footer-category">
-          <div class="container">
-            <h2 class="footer-category-title">Brand directory</h2>
-
-            <div class="footer-category-box">
-              <h3 class="category-box-title">Fashion :</h3>
-
-              <a href="#" class="footer-category-link">T-shirt</a>
-              <a href="#" class="footer-category-link">Shirts</a>
-              <a href="#" class="footer-category-link">shorts & jeans</a>
-              <a href="#" class="footer-category-link">jacket</a>
-              <a href="#" class="footer-category-link">dress & frock</a>
-              <a href="#" class="footer-category-link">innerwear</a>
-              <a href="#" class="footer-category-link">hosiery</a>
-            </div>
-          </div>
-        </div>
-
         <div class="footer-nav">
           <div class="container">
             <ul class="footer-nav-list">
               <li class="footer-nav-item">
-                <h2 class="nav-title">Popular Categories</h2>
+                <h2 class="nav-title">Categories</h2>
               </li>
 
               <li class="footer-nav-item">
-                <a href="#" class="footer-nav-link">Fashion</a>
+                <a href="#" class="footer-nav-link">Men's</a>
               </li>
-            </ul>
-
-            <ul class="footer-nav-list">
               <li class="footer-nav-item">
-                <h2 class="nav-title">Products</h2>
-              </li>
-
-              <li class="footer-nav-item">
-                <a href="#" class="footer-nav-link">Prices drop</a>
-              </li>
-
-              <li class="footer-nav-item">
-                <a href="#" class="footer-nav-link">New products</a>
-              </li>
-
-              <li class="footer-nav-item">
-                <a href="#" class="footer-nav-link">Best sales</a>
-              </li>
-
-              <li class="footer-nav-item">
-                <a href="#" class="footer-nav-link">Contact us</a>
-              </li>
-
-              <li class="footer-nav-item">
-                <a href="#" class="footer-nav-link">Sitemap</a>
+                <a href="#" class="footer-nav-link">Women's</a>
               </li>
             </ul>
 
@@ -677,32 +594,6 @@
 
             <ul class="footer-nav-list">
               <li class="footer-nav-item">
-                <h2 class="nav-title">Services</h2>
-              </li>
-
-              <li class="footer-nav-item">
-                <a href="#" class="footer-nav-link">Prices drop</a>
-              </li>
-
-              <li class="footer-nav-item">
-                <a href="#" class="footer-nav-link">New products</a>
-              </li>
-
-              <li class="footer-nav-item">
-                <a href="#" class="footer-nav-link">Best sales</a>
-              </li>
-
-              <li class="footer-nav-item">
-                <a href="#" class="footer-nav-link">Contact us</a>
-              </li>
-
-              <li class="footer-nav-item">
-                <a href="#" class="footer-nav-link">Sitemap</a>
-              </li>
-            </ul>
-
-            <ul class="footer-nav-list">
-              <li class="footer-nav-item">
                 <h2 class="nav-title">Contact</h2>
               </li>
 
@@ -720,7 +611,7 @@
                 </div>
 
                 <a href="tel:+607936-8058" class="footer-nav-link"
-                  >+201227000410</a
+                  >+201000000000</a
                 >
               </li>
 
@@ -784,14 +675,10 @@
         </div>
       </footer>
 
-      <!--
-    - custom js link
-  -->
+      <!--- custom js link -->
       <script src="./assets/js/script.js"></script>
 
-      <!--
-    - ionicon link
-  -->
+      <!--- ionicon link -->
       <script
         type="module"
         src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"
