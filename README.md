@@ -129,9 +129,9 @@ These are just a few suggestions based on the provided HTML structure. The speci
 
 - Mohamed: Home,about, contact, README
 
-- Yahia: cart, my bills, css, view Blog
+- Yehia: cart, my bills, css, view Blog
 
-- Kerlis: all products, All category, all blog.
+- Kerolos: all products, All category, all blog.
 
 - Youssef: my account, login, register, view products
 
