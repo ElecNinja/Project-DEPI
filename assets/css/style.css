@@ -3027,3 +3027,8 @@ footer {
     margin-top: 28.8%;
   }
 }
+
+.menu-title a {
+  text-decoration: none;
+  color: inherit;
+}
