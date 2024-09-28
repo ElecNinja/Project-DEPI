@@ -63,6 +63,42 @@ Contributions are welcome! Please follow the guidelines in the CONTRIBUTING.md f
 
 This project is licensed under the MIT License.
 
+## Project Structure
+
+```
+online-clothing-store/
+├── index.html
+├── about.html
+├── blog.html
+├── Categories.html
+├── Category-men.html
+├── Category-women.html
+├── contact.html
+├── Empty Template.html
+├── index code structure.html
+├── My Account.html
+├── terms-conditions.html
+├── README.md
+└── assets/
+    ├── css/
+    │   └── style.css
+    └── js/
+        ├── script.js
+        └── cart.js
+```
+
+This diagram shows the main structure of the project, including HTML files at the root level and the assets folder containing CSS and JavaScript files.
+
+- Mohamed: Home,about, contact, README
+
+- Yehia: cart, my bills, css, view Blog
+
+- Kerolos: all products, All category, all blog.
+
+- Youssef: my account, login, register, view products
+
+## Karim: View blog, view product
+
 ## **Project Enhancements Using JavaScript**
 
 Based on the provided HTML structure, here are some suggestions to add more functionality and dynamic behavior to the website using JavaScript:
@@ -124,15 +160,3 @@ Based on the provided HTML structure, here are some suggestions to add more func
 - Consider using techniques like code splitting and dynamic imports to load JavaScript modules on-demand.
 
 These are just a few suggestions based on the provided HTML structure. The specific implementation details and additional functionality will depend on the project requirements and your design decisions.
-
-## **_TODO_**
-
-- Mohamed: Home,about, contact, README
-
-- Yehia: cart, my bills, css, view Blog
-
-- Kerolos: all products, All category, all blog.
-
-- Youssef: my account, login, register, view products
-
-## Karim: View blog, view product
