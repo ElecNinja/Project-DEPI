@@ -31,6 +31,99 @@
     />
     <script src="assets/js/darkmode.js" defer></script>
     <script src="assets/js/cart.js" defer></script>
+    <style>
+      /* Add your custom styles here or link to an external stylesheet */
+      body {
+        font-family: "Arial", sans-serif;
+      }
+
+      /* .container {
+        max-width: 1200px;
+        margin: auto;
+        padding: 20px;
+      } */
+
+      header h1 {
+        text-align: center;
+        color: #3498db;
+      }
+
+      .banner img {
+        width: 100%;
+        display: block;
+      }
+
+      .banner-content {
+        position: relative;
+        top: 50%;
+        transform: translateY(-50%);
+        background-color: rgba(255, 255, 255, 0.9);
+        padding: 20px;
+        text-align: center;
+      }
+
+      .banner-btn {
+        display: inline-block;
+        margin-top: 10px;
+        padding: 10px 20px;
+        background-color: #3498db;
+        color: white;
+        text-decoration: none;
+        border-radius: 5px;
+      }
+
+      .mission-vision h2 {
+        text-align: center;
+        color: #3498db;
+      }
+
+      .mission-vision h3 {
+        text-align: center;
+        color: hsl(353, 100%, 78%);
+      }
+
+      .row {
+        display: flex;
+        justify-content: space-around;
+        margin-top: 20px;
+      }
+
+      .col {
+        text-align: center;
+      }
+
+      .team-members {
+        display: flex;
+        justify-content: space-around;
+        margin-top: 20px;
+      }
+
+      .member img {
+        width: 150px;
+        border-radius: 50%;
+        margin-bottom: 10px;
+      }
+
+      .contact-us h2 {
+        text-align: center;
+        color: #3498db;
+      }
+
+      .input-group label {
+        display: block;
+        margin-top: 10px;
+        font-weight: bold;
+      }
+
+      .input-group input,
+      .input-group textarea {
+        width: 100%;
+        padding: 10px;
+        border: 1px solid #ccc;
+        border-radius: 5px;
+        margin-bottom: 10px;
+      }
+    </style>
   </head>
 
   <body>
@@ -511,13 +604,120 @@
         <div class="product-container">
           <div class="container">
             <!--- SIDEBAR -->
+            <!--- SIDEBAR -->
             <div class="sidebar has-scrollbar" data-mobile-menu>
               <div class="sidebar-category">
                 <div class="sidebar-top">
                   <h2 class="sidebar-title">Category</h2>
+
                   <button class="sidebar-close-btn" data-mobile-menu-close-btn>
                     <ion-icon name="close-outline"></ion-icon>
                   </button>
+                </div>
+
+                <ul class="sidebar-menu-category-list">
+                  <li class="sidebar-menu-category">
+                    <button class="sidebar-accordion-menu" data-accordion-btn>
+                      <div class="menu-title-flex">
+                        <img
+                          src="./assets/images/icons/jacket.svg"
+                          alt="clothes"
+                          width="20"
+                          height="20"
+                          class="menu-title-img"
+                        />
+
+                        <p class="menu-title">
+                          <a href="/Category-men.html">Men's Wear</a>
+                        </p>
+                      </div>
+                    </button>
+                  </li>
+                  <li class="sidebar-menu-category">
+                    <button class="sidebar-accordion-menu" data-accordion-btn>
+                      <div class="menu-title-flex">
+                        <img
+                          src="./assets/images/icons/dress.svg"
+                          alt="clothes"
+                          width="20"
+                          height="20"
+                          class="menu-title-img"
+                        />
+
+                        <p class="menu-title">
+                          <a href="/Category-women.html">Women's Wear</a>
+                        </p>
+                      </div>
+                    </button>
+                  </li>
+                </ul>
+              </div>
+
+              <div class="product-showcase">
+                <h3 class="showcase-heading">best sellers</h3>
+
+                <div class="showcase-wrapper">
+                  <div class="showcase-container">
+                    <div class="showcase">
+                      <a href="#" class="showcase-img-box">
+                        <img
+                          src="./assets/images/products/2.jpg"
+                          alt="men's hoodies t-shirt"
+                          class="showcase-img"
+                          width="75"
+                          height="75"
+                        />
+                      </a>
+
+                      <div class="showcase-content">
+                        <a href="#">
+                          <h4 class="showcase-title">men's hoodies t-shirt</h4>
+                        </a>
+                        <div class="showcase-rating">
+                          <ion-icon name="star"></ion-icon>
+                          <ion-icon name="star"></ion-icon>
+                          <ion-icon name="star"></ion-icon>
+                          <ion-icon name="star"></ion-icon>
+                          <ion-icon name="star-half-outline"></ion-icon>
+                        </div>
+
+                        <div class="price-box">
+                          <del>$17.00</del>
+                          <p class="price">$7.00</p>
+                        </div>
+                      </div>
+                    </div>
+
+                    <div class="showcase">
+                      <a href="#" class="showcase-img-box">
+                        <img
+                          src="./assets/images/products/3.jpg"
+                          alt="girls t-shirt"
+                          class="showcase-img"
+                          width="75"
+                          height="75"
+                        />
+                      </a>
+
+                      <div class="showcase-content">
+                        <a href="#">
+                          <h4 class="showcase-title">girls t-shirt</h4>
+                        </a>
+                        <div class="showcase-rating">
+                          <ion-icon name="star"></ion-icon>
+                          <ion-icon name="star"></ion-icon>
+                          <ion-icon name="star"></ion-icon>
+                          <ion-icon name="star"></ion-icon>
+                          <ion-icon name="star-half-outline"></ion-icon>
+                        </div>
+
+                        <div class="price-box">
+                          <del>$5.00</del>
+                          <p class="price">$3.00</p>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
                 </div>
               </div>
             </div>
