@@ -3032,3 +3032,7 @@ footer {
   text-decoration: none;
   color: inherit;
 }
+
+.categories h2 {
+  color: hsl(353, 100%, 78%);
+}
