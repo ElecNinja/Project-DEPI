@@ -65,7 +65,6 @@ This project is licensed under the MIT License.
 
 ## Project Structure
 
-```
 online-clothing-store/
 ├── index.html
 ├── about.html
@@ -80,12 +79,11 @@ online-clothing-store/
 ├── terms-conditions.html
 ├── README.md
 └── assets/
-    ├── css/
-    │   └── style.css
-    └── js/
-        ├── script.js
-        └── cart.js
-```
+├── css/
+│ └── style.css
+└── js/
+├── script.js
+└── cart.js
 
 This diagram shows the main structure of the project, including HTML files at the root level and the assets folder containing CSS and JavaScript files.
 
