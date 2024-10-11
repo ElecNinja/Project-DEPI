@@ -47,19 +47,54 @@
         text-align: center;
         color: #3498db;
       }
+      .banner{
+        display: flex !important;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        margin-bottom: 0;
+      }
 
       .banner img {
         width: 100%;
         display: block;
       }
 
-      .banner-content {
+      .banner-contents {
         position: relative;
-        top: 50%;
-        transform: translateY(-50%);
+        /* top: 50%;
+        transform: translateY(-50%); */
         background-color: rgba(255, 255, 255, 0.9);
         padding: 20px;
         text-align: center;
+        display: flex !important;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        
+        max-width: 460px;
+        transform: translateY(-50%);
+        border-radius: 12px;
+      }
+      @media (max-width: 1024px) {
+        .banner-contents{
+          max-width: 400px;
+        }
+      }
+      @media (max-width: 768px) {
+        .banner-contents{
+          max-width: 380px;
+        }
+      }
+      @media (max-width: 570px) {
+        .banner-contents{
+          max-width: 360px;
+        }
+      }
+      @media (max-width: 480px) {
+        .banner-contents{
+          max-width: 320px;
+        }
       }
 
       .banner-btn {
@@ -80,6 +115,9 @@
       .mission-vision h3 {
         text-align: center;
         color: hsl(353, 100%, 78%);
+      }
+      .contact-form h2 {
+        color: #3498db;
       }
 
       .row {
@@ -118,6 +156,7 @@
         border: 1px solid #ccc;
         border-radius: 5px;
         margin-bottom: 10px;
+        outline: none;
       }
       .contact-us .page-title {
         color: hsl(353, 100%, 78%);
@@ -719,7 +758,7 @@
                 <h2 class="page-title">Contact Us</h2>
                 <div class="banner">
                   <img src="https://placehold.co/600x400" alt="Banner Image" />
-                  <div class="banner-content">
+                  <div class="banner-contents">
                     <h2>Welcome to Our Story</h2>
                     <p>
                       Lorem ipsum dolor sit amet, consectetur adipiscing elit.
