@@ -1949,9 +1949,9 @@ footer {
   border-bottom: 1px solid var(--onyx);
   padding-bottom: 30px;
   margin-bottom: 30px;
-  /* border-top: 1px solid var(--onyx);
+  border-top: 1px solid var(--onyx);
   padding-top: 30px;
-  margin-top: 30px; */
+  margin-top: 30px;
 }
 
 .footer-nav-list:not(:last-child) {
