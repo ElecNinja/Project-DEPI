@@ -33,9 +33,9 @@
     <script src="./assets/js/cart.js" defer></script>
     <style>
       /* Add your custom styles here or link to an external stylesheet */
-      body {
+      /* body {
         font-family: "Arial", sans-serif;
-      }
+      } */
 
       /* .container {
         max-width: 1200px;
@@ -48,18 +48,57 @@
         color: #3498db;
       }
 
-      .banner img {
-        width: 100%;
-        display: block;
+      .banner {
+        display: flex !important;
+        flex-direction: row;
+        align-items: center;
+        justify-content: center;
+        margin-bottom: 0;
+        /* width: 100%;
+        flex-grow: 1; */
+        flex-wrap: wrap;
       }
 
-      .banner-content {
+      .banner img {
+        width: 100% !important;
+        display: block !important;
+      }
+
+      .banner-contents {
         position: relative;
-        top: 50%;
-        transform: translateY(-50%);
+        /* top: 50%;
+        transform: translateY(-50%); */
         background-color: rgba(255, 255, 255, 0.9);
         padding: 20px;
         text-align: center;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+
+        max-width: 460px;
+        transform: translateY(-50%);
+        border-radius: 12px;
+      }
+      @media (max-width: 1024px) {
+        .banner-contents {
+          max-width: 400px;
+        }
+      }
+      @media (max-width: 768px) {
+        .banner-contents {
+          max-width: 380px;
+        }
+      }
+      @media (max-width: 570px) {
+        .banner-contents {
+          max-width: 360px;
+        }
+      }
+      @media (max-width: 480px) {
+        .banner-contents {
+          max-width: 320px;
+        }
       }
 
       .banner-btn {
@@ -80,6 +119,11 @@
       .mission-vision h3 {
         text-align: center;
         color: hsl(353, 100%, 78%);
+      }
+      .contact-form h2 {
+        color: #3498db;
+        text-align: center;
+        /* display: block; */
       }
 
       .row {
@@ -104,11 +148,6 @@
         margin-bottom: 10px;
       }
 
-      .contact-us h2 {
-        text-align: center;
-        color: #3498db;
-      }
-
       .input-group label {
         display: block;
         margin-top: 10px;
@@ -123,6 +162,7 @@
         border: 1px solid #ccc;
         border-radius: 5px;
         margin-bottom: 10px;
+        outline: none;
       }
       .blog .page-title {
         color: hsl(353, 100%, 78%);
@@ -718,11 +758,15 @@
             <!-- product-featured -->
             <div class="product-featured">
               <!-- Your Code Here -->
-              <!-- <section class="blog">
+              <!-- banner -->
+              <section class="blog">
                 <h2 class="page-title">Blog</h2>
                 <div class="banner">
-                  <img src="https://placehold.co/600x400" alt="Banner Image" />
-                  <div class="banner-content">
+                  <img
+                    src="./assets/images/blog-banner-1.jpeg"
+                    alt="Banner Image"
+                  />
+                  <div class="banner-contents">
                     <h2>Welcome to Our Story</h2>
                     <p>
                       Lorem ipsum dolor sit amet, consectetur adipiscing elit.
@@ -732,12 +776,14 @@
                     <a href="#" class="btn banner-btn">Read More</a>
                   </div>
                 </div>
-              </section> -->
+              </section>
+
+              <!-- blog container -->
               <div class="container">
                 <section class="blog-posts">
                   <div class="blog-post">
                     <img
-                      src="https://placehold.co/600x400?text=Men's+Fashion"
+                      src="./assets/images/men blog section.jpg"
                       alt="Men's Fashion"
                     />
                     <h2>Men's Fashion Trends 2024</h2>
@@ -750,7 +796,7 @@
 
                   <div class="blog-post">
                     <img
-                      src="https://placehold.co/600x400?text=Women's+Fashion"
+                      src="./assets/images/women blog section.jpg"
                       alt="Women's Fashion"
                     />
                     <h2>Women's Fashion Trends 2024</h2>
@@ -771,6 +817,33 @@
       <footer>
         <div class="footer-nav">
           <div class="container">
+            <!-- link -->
+            <ul class="footer-nav-list">
+              <li class="footer-nav-item">
+                <h2 class="nav-title">Links</h2>
+              </li>
+
+              <li class="footer-nav-item">
+                <a href="./index.html" class="footer-nav-link">Home</a>
+              </li>
+
+              <li class="footer-nav-item">
+                <a href="./blog.html" class="footer-nav-link">Blog</a>
+              </li>
+              <li class="footer-nav-item">
+                <a href="./about.html" class="footer-nav-link">About Us</a>
+              </li>
+              <li class="footer-nav-item">
+                <a href="./contact.html" class="footer-nav-link">Contact Us</a>
+              </li>
+              <li class="footer-nav-item">
+                <a href="./terms-conditions.html" class="footer-nav-link"
+                  >Terms and conditions</a
+                >
+              </li>
+            </ul>
+
+            <!-- categories -->
             <ul class="footer-nav-list">
               <li class="footer-nav-item">
                 <h2 class="nav-title">Categories</h2>
@@ -785,39 +858,8 @@
                 >
               </li>
             </ul>
-            <ul class="footer-nav-list">
-              <li class="footer-nav-item">
-                <h2 class="nav-title">Links</h2>
-              </li>
 
-              <li class="footer-nav-item">
-                <a href="./index.html" class="footer-nav-link">Home</a>
-              </li>
-
-              <li class="footer-nav-item">
-                <a href="./blog.html" class="footer-nav-link">Blog</a>
-              </li>
-              <li class="footer-nav-item">
-                <a href="./contact.html" class="footer-nav-link">Contact Us</a>
-              </li>
-            </ul>
-
-            <ul class="footer-nav-list">
-              <li class="footer-nav-item">
-                <h2 class="nav-title">Our Company</h2>
-              </li>
-
-              <li class="footer-nav-item">
-                <a href="./about.html" class="footer-nav-link">About Us</a>
-              </li>
-
-              <li class="footer-nav-item">
-                <a href="./terms-conditions.html" class="footer-nav-link"
-                  >Terms and conditions</a
-                >
-              </li>
-            </ul>
-
+            <!-- contact -->
             <ul class="footer-nav-list">
               <li class="footer-nav-item">
                 <h2 class="nav-title">Contact</h2>
@@ -846,12 +888,13 @@
                   <ion-icon name="mail-outline"></ion-icon>
                 </div>
 
-                <a href="mailto:example@gmail.com" class="footer-nav-link"
-                  >info@elitewer.com</a
+                <a href="mailto:info@elitewear.com" class="footer-nav-link"
+                  >info@elitewear.com</a
                 >
               </li>
             </ul>
 
+            <!-- social -->
             <ul class="footer-nav-list">
               <li class="footer-nav-item">
                 <h2 class="nav-title">Follow Us</h2>
@@ -885,17 +928,31 @@
                 </ul>
               </li>
             </ul>
+
+            <!-- our company -->
+            <ul class="footer-nav-list">
+              <li class="footer-nav-item">
+                <h2 class="nav-title">Our Company</h2>
+              </li>
+
+              <li class="footer-nav-item">
+                <a href="./about.html" class="footer-nav-link">About Us</a>
+              </li>
+
+              <li class="footer-nav-item">
+                <a href="./terms-conditions.html" class="footer-nav-link"
+                  >Terms and conditions</a
+                >
+              </li>
+            </ul>
           </div>
         </div>
-
+        <!-- bottom footer -->
         <div class="footer-bottom">
           <div class="container">
-            <img
-              src="./assets/images/payment.png"
-              alt="payment method"
-              class="payment-img"
-            />
-
+            <p class="copyright">
+              Copyright © 2024 Elite Wear. All rights reserved.
+            </p>
             <p class="copyright">&copy;DEPI - ALX1_SWD3_M1e</p>
           </div>
         </div>
