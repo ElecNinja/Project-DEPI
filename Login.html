@@ -309,14 +309,14 @@ body{
                 // First click: Trigger the animation
                 container.classList.add("active");
                 registerClickCount++;
-            } else if (registerClickCount === 1) {
-                // Second click: Redirect to MyAccount.html
+            } else if (container.classList.contains("active")) {
+                
                 window.location.href = "https://elecninja.github.io/My Account.html";
             }
         });
 
         // Reset behavior if needed (you can reset on certain actions if necessary)
-        loginBtn.addEventListener('click', () => {
+        signInBtn.addEventListener('click', () => {
             container.classList.remove("active"); // Reset the animation
             registerClickCount = 0; // Reset click counter
         });
