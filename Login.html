@@ -295,6 +295,8 @@ body{
         const container = document.getElementById('container');
         const signInBtn = document.getElementById('signInBtn');
         const signUpBtn = document.getElementById('signUpBtn');
+        const registerBtn = document.getElementById('register');
+        const login = document.getElementById('login');
         let registerClickCount = 0;
 
         // Redirect immediately when "Sign In" is clicked
@@ -303,20 +305,22 @@ body{
         });
 
         // Handle "Sign Up" button behavior
-        signUpBtn.addEventListener('click', (e) => {
+        register.addEventListener('click', (e) => {
             e.preventDefault(); // Prevent form submission to allow animations and actions
             if (registerClickCount === 0) {
                 // First click: Trigger the animation
                 container.classList.add("active");
                 registerClickCount++;
-            } else if (container.classList.contains("active")) {
-                
-                window.location.href = "My Account.html";
-            }
+            } 
+        });
+        signUpBtn.addEventListener('click', (e) => {
+            e.preventDefault();
+            window.location.href = "My Account.html";
+            
         });
 
         // Reset behavior if needed (you can reset on certain actions if necessary)
-        signInBtn.addEventListener('click', () => {
+        login.addEventListener('click', () => {
             container.classList.remove("active"); // Reset the animation
             registerClickCount = 0; // Reset click counter
         });
