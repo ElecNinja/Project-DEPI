@@ -282,7 +282,7 @@ body{
             <div class="toggle-panel toggle-right">
                 <h1>Hello, Friend</h1>
                 <p>Register with your personal details to use all of the site features!</p>
-                <button onclick="gotoAccount2" class="hidden" id = "register">Sign Up</button>
+                <button  class="hidden" id = "register">Sign Up</button>
             </div>
          </div>
         </div>
@@ -291,10 +291,16 @@ body{
         const container = document.getElementById('container');
         const registerBtn = document.getElementById('register');
         const loginBtn = document.getElementById('login');
+        let registerClickCount = 0;
 
     registerBtn.addEventListener('click' , () => {
+         if (registerClickCount === 0) {
         container.classList.add("active");
-    } );
+        registerClickCount++;}
+        else if (registerClickCount === 1){
+            window.location.href = "https://elecninja.github.io/MyAccount.html";
+        }
+     });
 
     loginBtn.addEventListener('click' , () => {
         container.classList.remove("active");
@@ -302,12 +308,12 @@ body{
     function gotoAccount() {
         window.location.href = "https://elecninja.github.io/My Account.html";
     }
-    function gotoAccount2() {
-        setTimeout(() => {
-            registerBtn.addEventListener('click' , () => {window.location.href = "https://elecninja.github.io/My Account.html"
-        }, 2500);
-        ;
-    })}
+    // function gotoAccount2() {
+    //     setTimeout(() => {
+    //         registerBtn.addEventListener('click' , () => {window.location.href = "https://elecninja.github.io/My Account.html"
+    //     }, 2500);
+    //     ;
+    // })}
     
     </script>
 </body>
