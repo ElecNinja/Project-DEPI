@@ -218,6 +218,14 @@
         width: 100%;
         height: auto;
       }
+      .map {
+        display: flex;
+        justify-content: center;
+      }
+
+      .map-iframe {
+        border: 1px solid hsl(353, 100%, 78%);
+      }
     </style>
   </head>
 
@@ -891,11 +899,11 @@
                     <article class="map">
                       <iframe
                         src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3697.1421512139646!2d29.9132114!3d31.2042345!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x145a6b5e8fb9fe4d%3A0xe42da45c21f0ad56!2sAlexandria!5e0!3m2!1sen!2seg!4v1661590113337!5m2!1sen!2seg"
+                        title="map"
                         width="600"
                         height="450"
-                        style="border: 0"
+                        class="map-iframe"
                         allowfullscreen=""
-                        loading="lazy"
                       ></iframe>
                     </article>
                   </section>
