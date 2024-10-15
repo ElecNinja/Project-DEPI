@@ -3036,3 +3036,42 @@ footer {
 .categories h2 {
   color: hsl(353, 100%, 78%);
 }
+
+/* Contact Styles */
+.address-info,
+      .phone-info,
+      .email-info{
+        color: hsl(353, 100%, 78%);
+      }
+     .address-info address{
+        color: var(--eerie-black);
+      }
+.email-info a,
+.phone-info a{
+  color: var(--eerie-black);
+}
+.contact-us .title{
+  color: #3498db;
+}
+
+/* Terms and conditions Styles */
+
+.container h1{
+  color: #3498db;
+}
+.container h2{
+  color: var(--salmon-pink);
+}
+.container h1,h2{
+  text-align: center;
+}
+
+.container p,li,li a{
+  color: var(--eerie-black);
+}
+.container li a{
+  font-weight: bold;
+}
+
+
+  

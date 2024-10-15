@@ -171,7 +171,6 @@
       .address-info,
       .phone-info,
       .email-info,
-      .social-links,
       .map {
         display: flex;
         align-items: center;
@@ -184,6 +183,14 @@
       .phone-info,
       .email-info {
         margin-bottom: 20px;
+      }
+      .social-links{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        border-radius: 5px;
+        box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+        padding: 10px;
       }
 
       .icon-box {
@@ -848,7 +855,8 @@
                     <div class="icon-box">
                       <ion-icon name="location-outline"></ion-icon>
                     </div>
-                    <p>Our Head Office:</p>
+                    <b><p>Our Head Office:</p></b>
+                    <pre> </pre>
                     <address>123 Main St, Alexandria, Egypt</address>
                   </article>
 
@@ -857,7 +865,8 @@
                     <div class="icon-box">
                       <ion-icon name="call-outline"></ion-icon>
                     </div>
-                    <p>Phone Us:</p>
+                    <b><p>Phone Us:</p></b>
+                    <pre> </pre>
                     <a href="tel:+20100000000">+201-0000-0000</a>
                   </article>
 
@@ -866,7 +875,8 @@
                     <div class="icon-box">
                       <ion-icon name="mail-outline"></ion-icon>
                     </div>
-                    <p>Email Us:</p>
+                    <b><p>Email Us:</p></b>
+                    <pre> </pre>
                     <a href="mailto:info@elitewear.com">info@elitewear.com</a>
                   </article>
 
