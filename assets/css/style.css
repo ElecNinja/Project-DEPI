@@ -3039,13 +3039,13 @@ footer {
 
 /* Contact Styles */
 .address-info,
-      .phone-info,
-      .email-info{
-        color: hsl(353, 100%, 78%);
-      }
-     .address-info address{
-        color: var(--eerie-black);
-      }
+.phone-info,
+.email-info{
+  color: hsl(353, 100%, 78%);
+}
+.address-info address{
+  color: var(--eerie-black);
+}
 .email-info a,
 .phone-info a{
   color: var(--eerie-black);
@@ -3056,20 +3056,29 @@ footer {
 
 /* Terms and conditions Styles */
 
-.container h1{
+.container2{
+  padding: 0 15px;
+  max-width: 800px;
+  margin: 0 auto;
+}
+
+.container2 h1{
   color: #3498db;
 }
-.container h2{
+.container2 h2{
   color: var(--salmon-pink);
 }
-.container h1,h2{
+.container2 h1,
+.container2 h2{
   text-align: center;
 }
 
-.container p,li,li a{
+.container2 p,
+.container2 li,
+.container2 li a{
   color: var(--eerie-black);
 }
-.container li a{
+.container2 li a{
   font-weight: bold;
 }
 
