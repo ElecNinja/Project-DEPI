@@ -3058,7 +3058,7 @@ footer {
 
 .container2{
   padding: 0 15px;
-  max-width: 800px;
+  max-width: 1280px;
   margin: 0 auto;
 }
 
@@ -3082,5 +3082,9 @@ footer {
   font-weight: bold;
 }
 
+/* About Us Styles */
+.row .col p{
+  color: var(--eerie-black);
+}
 
   
