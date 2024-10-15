@@ -10,5 +10,8 @@ carticons.forEach(carticons => {
 close.addEventListener('click', () => {
     body.classList.toggle('showCart');
 });
+checkout.addEventListener('click', () => {
+    window.location.href = "Checkout.html";
+});
 
 
