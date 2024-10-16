@@ -26,6 +26,7 @@ Live preview on GitHub : `https://elecninja.github.io/Project-DEPI/index.html`
 - Contact page
 - Blog page
 - Basic cart functionality
+- Go to the top button
 - User account page (My Account)
 - Terms and conditions page
 
