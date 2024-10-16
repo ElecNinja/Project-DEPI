@@ -7,6 +7,10 @@ This project is an online clothing store website built using HTML, CSS, and Java
 1. Clone the repository: `git clone https://github.com/your-username/online-clothing-store.git`
 2. Open the `index.html` file in a web browser to view the website.
 
+## Live Preview
+
+Live preview on GitHub : `https://github.com/your-username/online-clothing-store.git`
+
 ## Technologies Used
 
 - HTML
@@ -57,10 +61,11 @@ Online-Clothing-Store/
 ├── index.html
 ├── Login.html
 ├── mens-blog.html
-├── My Account.html
-├── README.md
-├── terms-conditions.html
 ├── womens-blog.html
+├── My Account.html
+├── terms-conditions.html
+├── README.md
+├── LICENSE
 
 ## Team Members and Responsibilities
 
