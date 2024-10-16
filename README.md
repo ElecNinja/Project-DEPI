@@ -4,12 +4,12 @@ This project is an online clothing store website built using HTML, CSS, and Java
 
 ## Getting Started
 
-1. Clone the repository: `git clone https://github.com/your-username/online-clothing-store.git`
+1. Clone the repository: `git clone https://github.com/ElecNinja/Project-DEPI.git`
 2. Open the `index.html` file in a web browser to view the website.
 
 ## Live Preview
 
-Live preview on GitHub : `https://github.com/your-username/online-clothing-store.git`
+Live preview on GitHub : `https://elecninja.github.io/Project-DEPI/index.html`
 
 ## Technologies Used
 
