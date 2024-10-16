@@ -27,7 +27,26 @@ This project is an online clothing store website built using HTML, CSS, and Java
 
 ## Project Structure
 
-online-clothing-store/
+Online-Clothing-Store/
+├── assets/
+│ ├── css/
+│ │ └── style.css
+│ ├── images/
+│ │ ├── icons/
+│ │ │ ├── jacket.svg
+│ │ │ └── dress.svg
+│ │ ├── products/
+│ │ │ ├── jacket-3.jpg
+│ │ │ ├── jacket-5.jpg
+│ │ │ └── ...
+│ │ └── banner-1.jpg
+│ │ └── banner-2.jpg
+│ │ └── banner-3.jpg
+│ └── js/
+│ └── cart.js
+│ └── darkmode.js
+│ └── heart.js
+│ └── script.js
 ├── about.html
 ├── blog.html
 ├── Categories.html
@@ -42,12 +61,6 @@ online-clothing-store/
 ├── README.md
 ├── terms-conditions.html
 ├── womens-blog.html
-└── assets/
-├── css/
-│ └── style.css
-└── js/
-├── script.js
-└── cart.js
 
 ## Team Members and Responsibilities
 
