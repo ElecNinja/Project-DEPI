@@ -28,18 +28,20 @@ This project is an online clothing store website built using HTML, CSS, and Java
 ## Project Structure
 
 online-clothing-store/
-├── index.html
 ├── about.html
 ├── blog.html
 ├── Categories.html
 ├── Category-men.html
 ├── Category-women.html
+├── Checkout.html
 ├── contact.html
-├── Empty Template.html
-├── index code structure.html
+├── index.html
+├── Login.html
+├── mens-blog.html
 ├── My Account.html
-├── terms-conditions.html
 ├── README.md
+├── terms-conditions.html
+├── womens-blog.html
 └── assets/
 ├── css/
 │ └── style.css
