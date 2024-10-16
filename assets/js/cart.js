@@ -14,7 +14,6 @@ close.addEventListener("click", () => {
 checkout.addEventListener("click", () => {
   window.location.href = "Checkout.html";
 });
-
 document.addEventListener("DOMContentLoaded", function () {
   const addToCartBtns = document.querySelectorAll(
     'button.btn-action ion-icon[name="bag-add-outline"]'
@@ -30,6 +29,8 @@ document.addEventListener("DOMContentLoaded", function () {
     });
   });
 });
+
+// add to cart
 document.addEventListener("DOMContentLoaded", function () {
   const addToCartBtns = document.querySelectorAll(
     'button.btn-action ion-icon[name="bag-add-outline"]'
