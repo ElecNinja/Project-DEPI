@@ -3128,7 +3128,7 @@ footer {
   margin: 0 auto;
 }
 
-.container2 h1 {
+.container2 h1,h3 {
   color: #3498db;
 }
 .container2 h2 {
@@ -3147,6 +3147,7 @@ footer {
 .container2 li a {
   font-weight: bold;
 }
+
 
 /* About Us Styles */
 .row .col p {
