@@ -1185,13 +1185,13 @@ transform: translate(-250px);
   margin-bottom: 15px;
 }
 
-.sidebar .showcase {
+.sidebar .showcase-side {
   display: flex;
   align-items: center;
   gap: 15px;
 }
 
-.sidebar .showcase:not(:last-child) {
+.sidebar .showcase-side:not(:last-child) {
   margin-bottom: 15px;
 }
 
