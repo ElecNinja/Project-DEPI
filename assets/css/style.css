@@ -662,6 +662,7 @@ body::-webkit-scrollbar-thumb:hover {
   font-size: var(--fs-6);
   font-weight: var(--weight-500);
   padding: 12px 0;
+  
 }
 
 @keyframes scroll {
@@ -847,6 +848,16 @@ transform: translate(-250px);
   overflow: auto;
 }
 
+.darks{
+  color: var(--bittersweet)!important;
+  width: 195%;
+  margin: 0px 0px 0px 10px;
+}
+.darks:hover{
+  background-color: lightpink !important;
+}
+
+
 .dropdown {
   position: relative;
   display: inline-block;
@@ -936,6 +947,7 @@ transform: translate(-250px);
   font-weight: var(--weight-500);
   color: var(--eerie-black);
   padding: 12px 0;
+  border-radius: 8px !important;
 }
 
 .accordion-menu.active .caret-back {
