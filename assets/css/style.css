@@ -662,7 +662,6 @@ body::-webkit-scrollbar-thumb:hover {
   font-size: var(--fs-6);
   font-weight: var(--weight-500);
   padding: 12px 0;
-  
 }
 
 @keyframes scroll {
@@ -848,15 +847,14 @@ transform: translate(-250px);
   overflow: auto;
 }
 
-.darks{
-  color: var(--bittersweet)!important;
+.darks {
+  color: var(--bittersweet) !important;
   width: 195%;
   margin: 0px 0px 0px 10px;
 }
-.darks:hover{
+.darks:hover {
   background-color: lightpink !important;
 }
-
 
 .dropdown {
   position: relative;
@@ -3140,11 +3138,14 @@ footer {
   margin: 0 auto;
 }
 
-.container2 h1,h3 {
+.container2 h1,
+h3 {
   color: #3498db;
+  padding: 20px 40px;
 }
 .container2 h2 {
   color: var(--salmon-pink);
+  padding: 20px 40px;
 }
 .container2 h1,
 .container2 h2 {
@@ -3159,7 +3160,6 @@ footer {
 .container2 li a {
   font-weight: bold;
 }
-
 
 /* About Us Styles */
 .row .col p {
@@ -3190,4 +3190,30 @@ footer {
   text-align: right;
   margin-top: 20px;
   font-weight: bold;
+}
+
+.breadcrumb {
+  list-style: none; /* Remove default list markers */
+  padding: 0;
+  margin-bottom: 20px; /* Add some spacing below */
+}
+
+.breadcrumb-item {
+  display: inline-block; /* Make items appear in one line */
+}
+
+.breadcrumb-item + .breadcrumb-item::before {
+  /* Add separator between items */
+  content: ">";
+  padding: 0 5px;
+}
+
+.breadcrumb-item a {
+  text-decoration: none; /* Remove underline from links */
+  color: #5900ff; /* Example link color */
+}
+
+.breadcrumb-item.active {
+  font-weight: bold; /* Make the current page bold */
+  color: #00ff5e; /* Example link color */
 }
