@@ -4,7 +4,7 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Category Men</title>
+    <title>Men's Category</title>
 
     <!--
     - favicon
@@ -32,17 +32,18 @@
     <script src="./assets/js/darkmode.js" defer></script>
     <script src="./assets/js/cart.js" defer></script>
     <style>
-      .product-minimals .showcase-containers {
-        min-width: 50%;
+      .category-grid {
+        display: flex;
+        gap: 5px;
+        margin-top: 5%;
       }
-
-      .product-featureds .showcase-imgs {
-        max-width: 450px;
-        margin: auto;
+      @media (max-width: 576px) {
+        .category-grid {
+          flex-direction: column;
+        }
       }
-
-      .product-featureds .countdowns {
-        gap: 20px;
+      .category-item img {
+        width: 100%;
       }
     </style>
   </head>
@@ -224,12 +225,12 @@
 
               <button class="action-btn heartOpen">
                 <ion-icon name="heart-outline"></ion-icon>
-                <span class="count heartcnt">0</span>
+                <span class="count">0</span>
               </button>
 
               <button class="action-btn cart">
                 <ion-icon name="bag-handle-outline"></ion-icon>
-                <span class="count cartqtn">0</span>
+                <span class="count">0</span>
               </button>
             </div>
           </div>
@@ -238,20 +239,9 @@
         <!-- CART TABLE CONTENT -->
         <div class="cartTab">
           <h1>Shopping Cart</h1>
-          <div class="listCart">
-            <!-- items are added here dynamically -->
-            <!-- <div class="item">
-              <div class="image">
-                <img src="assets/images/products/jacket-3.jpg" alt="" />
-              </div>
-              <div class="name">Mens Winter Leathers Jacket</div>
-              <div class="totalprice">$48.00</div>
-              <div class="quantity">
-                <span class="minus"><</span>
-                <span>1</span>
-                <span class="plus">></span>
-              </div>
-            </div> -->
+          <div class="listCart"></div>
+          <div class="cart-total">
+            Total: <span id="cart-total-price">```0.00</span>
           </div>
           <div class="btn">
             <button class="close">CLOSE</button>
@@ -345,7 +335,7 @@
           <button class="action-btn heartOpen">
             <ion-icon name="heart-outline"></ion-icon>
 
-            <span class="count heartcnt">0</span>
+            <span class="count">0</span>
           </button>
 
           <button class="action-btn" data-mobile-menu-open-btn>
@@ -487,9 +477,9 @@
           </div>
         </nav>
       </header>
+
       <!--- MAIN -->
       <main>
-        <!-- main container -->
         <div class="product-container">
           <div class="container">
             <!--- SIDEBAR -->
@@ -609,24 +599,24 @@
                 </div>
               </div>
             </div>
-
             <!-- product-featured -->
             <div class="product-featured">
               <!-- Your Code Here -->
-              <!-- breadcrumb -->
-              <nav aria-label="breadcrumb">
-                <ol class="breadcrumb">
-                  <li class="breadcrumb-item"><a href="index.html">Home</a></li>
-                  <li class="breadcrumb-item">
-                    <a href="Categories.html">Categories</a>
-                  </li>
-                  <li class="breadcrumb-item active" aria-current="page">
-                    Men's
-                  </li>
-                </ol>
-              </nav>
+              <div class="categories">
+                <!-- breadcrumb -->
+                <nav aria-label="breadcrumb">
+                  <ol class="breadcrumb">
+                    <li class="breadcrumb-item">
+                      <a href="index.html">Home</a>
+                    </li>
+                    <li class="breadcrumb-item active" aria-current="page">
+                      Categories
+                    </li>
+                  </ol>
+                </nav>
 
-              <h2 class="page-title">About Us</h2>
+                <h2>Men's Category</h2>
+              </div>
             </div>
           </div>
         </div>
