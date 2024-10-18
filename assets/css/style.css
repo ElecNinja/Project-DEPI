@@ -782,6 +782,71 @@ transform: translate(-250px);
   overflow: auto;
 }
 
+.heartTab {
+  width: 400px;
+  background-color: #2a2a30;
+  color: #eee;
+  position: fixed;
+  inset: 0 -400px 0 auto;
+  display: grid;
+  grid-template-rows: 70px 1fr 70px;
+  z-index: 6;
+  transition: 0.5s;
+}
+.showHeart .heartTab {
+  inset: 0 0 0 auto;
+}
+/* .showCart .bigcontainer{
+transform: translate(-250px);
+}  bugs the entire website so idk how to fix*/
+.heartTab h1 {
+  padding: 20px;
+  margin: 0;
+  font-weight: 300;
+}
+.heartTab .btn {
+  display: grid;
+  grid-template-columns: repeat(1, 1fr);
+}
+.heartTab .btn button {
+  background-color: var(--third-color);
+  border: none;
+  font-weight: 500;
+  cursor: pointer;
+}
+.heartTab .btn .closeHeart {
+  background: #eee;
+}
+.heartTab .listHeart .item img {
+  width: 100%;
+}
+.heartTab .listHeart .item {
+  display: grid;
+  grid-template-columns: 70px 150px 50px 1fr;
+  gap: 10px;
+  text-align: center;
+  align-items: center;
+}
+.listHeart .quantity span {
+  display: inline-block;
+  width: 25px;
+  height: 25px;
+  background-color: #eee;
+  color: #555;
+  border-radius: 50%;
+  cursor: pointer;
+}
+.listHeart .quantity span:nth-child(2) {
+  background-color: transparent;
+  color: #eee;
+}
+.listHeart .item:nth-child(even) {
+  background-color: #eee1;
+}
+.listHeart {
+  overflow: auto;
+}
+
 .dropdown {
   position: relative;
   display: inline-block;
