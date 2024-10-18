@@ -26,6 +26,7 @@ Live preview on GitHub : `https://elecninja.github.io/Project-DEPI/index.html`
 - Contact page
 - Blog page
 - Basic cart functionality
+- From window you Cart increase product number and then sum the total price
 - Go to the top button
 - User account page (My Account)
 - Terms and conditions page
