@@ -30,7 +30,8 @@ Live preview on GitHub : `https://elecninja.github.io/Project-DEPI/index.html`
 - From window you Cart increase product number and then sum the total price
 - Basic Favourite slider window functionality
 - All pages including their breadcrumb at the top
-- Go to the top button
+- Go to the top button functionality
+- run minify.js from the terminal to minify the CSS code
 - User account page (My Account)
 - Terms and conditions page
 
