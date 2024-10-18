@@ -3196,7 +3196,7 @@ h3 {
 .breadcrumb {
   list-style: none;
   padding: 0;
-  margin-bottom: 20px;
+  /* margin-bottom: 20px; */
   white-space: nowrap; /* Keep breadcrumbs on one line (optional) */
   overflow-x: auto; /* Enable horizontal scrolling (optional) */
 }
@@ -3209,7 +3209,8 @@ h3 {
 
 .breadcrumb-item a {
   text-decoration: none;
-  color: #333;
+  color: var(--eerie-black);
+  display: inline;
 }
 
 .breadcrumb-item a:hover {
@@ -3218,13 +3219,13 @@ h3 {
 
 .breadcrumb-item.active {
   font-weight: bold;
-  color: #000;
+  color: var(--eerie-black);
 }
 
 /* Optional: Add a subtle visual separator using borders or background */
 .breadcrumb-item + .breadcrumb-item::before {
-  content: ""; /* No content for the separator */
   display: inline-block;
+  content: ""; /* No content for the separator */
   width: 1px; /* Adjust width as needed */
   height: 14px; /* Adjust height to match font size */
   background-color: #ccc; /* Light gray color */
