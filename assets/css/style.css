@@ -3192,28 +3192,42 @@ h3 {
   font-weight: bold;
 }
 
+/* breadcumb */
 .breadcrumb {
-  list-style: none; /* Remove default list markers */
+  list-style: none;
   padding: 0;
-  margin-bottom: 20px; /* Add some spacing below */
+  margin-bottom: 20px;
+  white-space: nowrap; /* Keep breadcrumbs on one line (optional) */
+  overflow-x: auto; /* Enable horizontal scrolling (optional) */
 }
 
 .breadcrumb-item {
-  display: inline-block; /* Make items appear in one line */
-}
-
-.breadcrumb-item + .breadcrumb-item::before {
-  /* Add separator between items */
-  content: ">";
-  padding: 0 5px;
+  display: inline-block;
+  font-size: 14px;
+  margin-right: 10px; /* Add spacing between items */
 }
 
 .breadcrumb-item a {
-  text-decoration: none; /* Remove underline from links */
-  color: #5900ff; /* Example link color */
+  text-decoration: none;
+  color: #333;
+}
+
+.breadcrumb-item a:hover {
+  text-decoration: underline;
 }
 
 .breadcrumb-item.active {
-  font-weight: bold; /* Make the current page bold */
-  color: #00ff5e; /* Example link color */
+  font-weight: bold;
+  color: #000;
+}
+
+/* Optional: Add a subtle visual separator using borders or background */
+.breadcrumb-item + .breadcrumb-item::before {
+  content: ""; /* No content for the separator */
+  display: inline-block;
+  width: 1px; /* Adjust width as needed */
+  height: 14px; /* Adjust height to match font size */
+  background-color: #ccc; /* Light gray color */
+  margin: 0 10px; /* Adjust margins for spacing */
+  vertical-align: middle; /* Align the separator vertically */
 }
