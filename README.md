@@ -19,6 +19,7 @@ Live preview on GitHub : `https://elecninja.github.io/Project-DEPI/index.html`
 
 ## Current Functionality
 
+- Responsive, adapt to different screen sizes with Mobile Navigation Menu
 - Home page with featured products and image slider
 - Category pages for men's and women's clothing
 - Product detail pages
