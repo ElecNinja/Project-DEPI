@@ -1,18 +1,18 @@
-let carticons = document.querySelectorAll('.cart');
-let close = document.querySelector('.close');
-let body = document.querySelector('body');
-let checkout = document.querySelector('.checkout');
+let carticons = document.querySelectorAll(".cart");
+let close = document.querySelector(".close");
+let body = document.querySelector("body");
+let checkout = document.querySelector(".checkout");
 
-carticons.forEach(carticons => {
-    carticons.addEventListener('click', () => {
-        body.classList.toggle('showCart');
-    });
+carticons.forEach((carticons) => {
+  carticons.addEventListener("click", () => {
+    body.classList.toggle("showCart");
+  });
 });
-close.addEventListener('click', () => {
-    body.classList.toggle('showCart');
+close.addEventListener("click", () => {
+  body.classList.toggle("showCart");
 });
-checkout.addEventListener('click', () => {
-    window.location.href = "Checkout.html";
+checkout.addEventListener("click", () => {
+  window.location.href = "Checkout.html";
 });
 
 document.addEventListener("DOMContentLoaded", function () {

@@ -93,3 +93,20 @@ for (let i = 0; i < numberOfSlides; i++) {
   // Append the newly created <div> as a child to the slide container in the DOM
   slideContainer.appendChild(slideDiv);
 }
+// Go to top functionality
+window.onscroll = function () {
+  scrollFunction();
+};
+
+function scrollFunction() {
+  if (document.body.scrollTop > 20 || document.documentElement.scrollTop > 20) {
+    document.getElementById("goToTopBtn").style.display = "block";
+  } else {
+    document.getElementById("goToTopBtn").style.display = "none";
+  }
+}
+
+document.getElementById("goToTopBtn").onclick = function () {
+  document.body.scrollTop = 0; // For Safari
+  document.documentElement.scrollTop = 0; // For Chrome, Firefox, IE and Opera
+};

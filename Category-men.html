@@ -32,18 +32,18 @@
     <script src="./assets/js/darkmode.js" defer></script>
     <script src="./assets/js/cart.js" defer></script>
     <style>
-       .product-minimals .showcase-containers {
-    min-width: 50%;
-  }
+      .product-minimals .showcase-containers {
+        min-width: 50%;
+      }
 
-  .product-featureds .showcase-imgs {
-    max-width: 450px;
-    margin: auto;
-  }
+      .product-featureds .showcase-imgs {
+        max-width: 450px;
+        margin: auto;
+      }
 
-  .product-featureds .countdowns {
-    gap: 20px;
-  }
+      .product-featureds .countdowns {
+        gap: 20px;
+      }
     </style>
   </head>
 
@@ -222,7 +222,7 @@
                 </div>
               </button>
 
-              <button  class="action-btn">
+              <button class="action-btn">
                 <ion-icon name="heart-outline"></ion-icon>
                 <span class="count heartcnt">0</span>
               </button>
@@ -239,6 +239,19 @@
         <div class="cartTab">
           <h1>Shopping Cart</h1>
           <div class="listCart">
+            <!-- items are added here dynamically -->
+            <!-- <div class="item">
+              <div class="image">
+                <img src="assets/images/products/jacket-3.jpg" alt="" />
+              </div>
+              <div class="name">Mens Winter Leathers Jacket</div>
+              <div class="totalprice">$48.00</div>
+              <div class="quantity">
+                <span class="minus"><</span>
+                <span>1</span>
+                <span class="plus">></span>
+              </div>
+            </div> -->
           </div>
           <div class="btn">
             <button class="close">CLOSE</button>
@@ -321,7 +334,7 @@
             <ion-icon name="home-outline"></ion-icon>
           </button>
 
-          <button  class="action-btn">
+          <button class="action-btn">
             <ion-icon name="heart-outline"></ion-icon>
 
             <span class="count heartcnt">0</span>
@@ -622,6 +635,7 @@
             <!-- product-featured -->
             <div class="product-featureds">
               <div class="product-grid">
+                <!-- Products -->
                 <div class="showcase">
                   <div class="showcase-banner">
                     <img
@@ -640,7 +654,7 @@
                     <p class="showcase-badge">15%</p>
 
                     <div class="showcase-actions">
-                      <button class="btn-action heart" >
+                      <button class="btn-action heart">
                         <ion-icon name="heart-outline"></ion-icon>
                       </button>
 
@@ -652,7 +666,7 @@
                         <ion-icon name="repeat-outline"></ion-icon>
                       </button>
 
-                      <button class="btn-action cartbtn">
+                      <button class="btn-action">
                         <ion-icon name="bag-add-outline"></ion-icon>
                       </button>
                     </div>
@@ -1290,7 +1304,7 @@
                     <p class="showcase-badge angle black">sale</p>
 
                     <div class="showcase-actions">
-                      <button class="btn-action heart" >
+                      <button class="btn-action heart">
                         <ion-icon name="heart-outline"></ion-icon>
                       </button>
 
@@ -1332,10 +1346,6 @@
                   </div>
                 </div>
               </div>
-            </div>
-          </div>
-        </div>
-      </div>
             </div>
           </div>
         </div>
@@ -1485,6 +1495,8 @@
           </div>
         </div>
       </footer>
+      <!-- go to top button -->
+      <button id="goToTopBtn" title="Go to top">↑</button>
 
       <!--- custom js link -->
       <script src="./assets/js/script.js"></script>
@@ -1497,7 +1509,7 @@
       <script
         nomodule
         src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"
-      ></script>  
+      ></script>
       <script src="./assets/js/heart.js"></script>
    
       
