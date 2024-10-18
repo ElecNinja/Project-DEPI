@@ -77,22 +77,32 @@ const slideContent =
   "Buy One Get One Free on all fashion products! Limited time offer!";
 
 // Get the container where the slides will be inserted. This is the div with the id "slideContainer"
-const slideContainer = document.getElementById("slideContainer");
+const slideContainer = document.querySelector(".content-slide");
 
 // Define the number of slides to be created. You can adjust this number to create more or fewer slides
 const numberOfSlides = 7;
 
 // Loop through to create the desired number of slides
-for (let i = 0; i < numberOfSlides; i++) {
+function createSlides(){
+  for (let i = 0; i < numberOfSlides; i++) {
   // Create a new <div> element for each slide
   const slideDiv = document.createElement("div");
 
   // Set the text content of the newly created <div> to the value stored in slideContent
   slideDiv.textContent = slideContent;
+  // slideDiv.classList.add('content-slide');
 
   // Append the newly created <div> as a child to the slide container in the DOM
   slideContainer.appendChild(slideDiv);
-}
+}}
+
+createSlides();
+
+
+var copy = document.querySelector(".content-slide").cloneNode(true);
+    document.querySelector(".content").appendChild(copy)
+
+
 // Go to top functionality
 window.onscroll = function () {
   scrollFunction();
