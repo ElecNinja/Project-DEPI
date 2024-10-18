@@ -128,7 +128,7 @@ function addToCart(name, price, imageUrl) {
 
 function updateCartCount() {
   const cartCount = document.querySelectorAll(".cartqtn");
-  const cartItems = document.querySelectorAll(".item");
+  const cartItems = document.querySelectorAll(".listCart .item");
   cartCount.forEach((count) => {
     count.textContent = cartItems.length;
   });
