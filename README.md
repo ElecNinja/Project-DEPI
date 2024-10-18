@@ -25,8 +25,9 @@ Live preview on GitHub : `https://elecninja.github.io/Project-DEPI/index.html`
 - About page
 - Contact page
 - Blog page
-- Basic cart functionality
+- Basic cart slider window functionality
 - From window you Cart increase product number and then sum the total price
+- Basic Favourite slider window functionality
 - Go to the top button
 - User account page (My Account)
 - Terms and conditions page
