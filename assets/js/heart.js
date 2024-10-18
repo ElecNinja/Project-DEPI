@@ -120,7 +120,7 @@ window.addEventListener("DOMContentLoaded", function () {
     }
 
     function updateFavoriteCount() {
-        const favoriteCount = document.querySelectorAll('.heartctn');
+        const favoriteCount = document.querySelectorAll('.heartcnt');
         const favoriteItems = document.querySelectorAll('.listHeart .item');
         favoriteCount.forEach(count => {
             count.textContent = favoriteItems.length;
