@@ -3128,11 +3128,14 @@ footer {
   margin: 0 auto;
 }
 
-.container2 h1,h3 {
+.container2 h1,
+h3 {
   color: #3498db;
+  padding: 20px 40px;
 }
 .container2 h2 {
   color: var(--salmon-pink);
+  padding: 20px 40px;
 }
 .container2 h1,
 .container2 h2 {
@@ -3147,7 +3150,6 @@ footer {
 .container2 li a {
   font-weight: bold;
 }
-
 
 /* About Us Styles */
 .row .col p {
