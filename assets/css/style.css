@@ -3172,3 +3172,9 @@ footer {
 #goToTopBtn:hover {
   background-color: #333;
 }
+
+.cart-total {
+  text-align: right;
+  margin-top: 20px;
+  font-weight: bold;
+}
