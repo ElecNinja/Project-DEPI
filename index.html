@@ -384,24 +384,41 @@
             </li>
 
             <li class="menu-category">
-              <a href="./blog.html" class="menu-title">Blog</a>
-            </li>
-
-            <li class="menu-category">
-              <a href="./Categories.html" class="menu-title">Categories</a>
+              <a href="./about.html" class="menu-title">About</a>
             </li>
 
             <li class="menu-category">
               <a href="./contact.html" class="menu-title">Contact</a>
+            </li>
+
+            <li class="menu-category">
+              <a href="./blog.html" class="menu-title">Blog</a>
+            </li>
+
+            <li class="menu-category">
+              <a href="./try-on-app/index.html" class="menu-title">Try-On</a>
             </li>
           </ul>
 
           <div class="menu-bottom">
             <ul class="menu-category-list">
               <li class="menu-category">
-                <button id="darkswitch">
-                  <p class="menu-title darks">Change Theme</p>
+                <button class="accordion-menu" data-accordion-btn>
+                  <p class="menu-title">Theme</p>
+
+                  <ion-icon
+                    name="caret-back-outline"
+                    class="caret-back"
+                  ></ion-icon>
                 </button>
+
+                <ul class="submenu-category-list" data-accordion>
+                  <li class="submenu-category">
+                    <button id="darkswitch">
+                      <a href="#" class="submenu-title">Change Theme</a>
+                    </button>
+                  </li>
+                </ul>
               </li>
             </ul>
 
