@@ -22,7 +22,15 @@ Live preview on GitHub : `https://elecninja.github.io/Project-DEPI/index.html`
 - Responsive, adapt to different screen sizes with Mobile Navigation Menu
 - Home page with featured products and image slider
 - Category pages for men's and women's clothing
+
 - Experimental Try-on-clothes functionality
+- How it Works:
+
+  - HTML Setup: Include the TensorFlow.js and PoseNet scripts.
+  - Capture Camera Feed: Use the HTML5 video element to capture the live video stream.
+  - Pose Detection: Use PoseNet to detect the user’s body pose.
+  - Overlay Clothes: Load and position clothing images based on the detected pose.
+
 - Product detail pages
 - About page
 - Contact page
