@@ -33,7 +33,8 @@ An experimental virtual try-on clothes app that uses the camera to detect a user
 
 ### Running the Application
 
-1. Clone or download the repository.
+1. Clone or download the repository. `git clone https://github.com/ElecNinja/Project-DEPI/tree/main/try-on-app`
+
 2. Navigate to the project folder and open `index.html` in your preferred browser.
 
 3. Allow camera access to start using the app.
