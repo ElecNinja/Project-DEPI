@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Enhanced Try-On Clothes App</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <h1>Enhanced Try-On Clothes App</h1>
+
+    <video id="video" width="640" height="480" autoplay></video>
+    <canvas id="overlay" width="640" height="480"></canvas>
+
+    <div id="controls">
+      <label for="colorPicker">Customize Color:</label>
+      <input type="color" id="colorPicker" value="#ffffff" />
+
+      <label for="opacitySlider">Opacity:</label>
+      <input
+        type="range"
+        id="opacitySlider"
+        min="0"
+        max="1"
+        step="0.01"
+        value="1"
+      />
+
+      <button id="reset">Reset Position</button>
+      <button id="capture">Capture</button>
+    </div>
+
+    <script src="https://cdn.jsdelivr.net/npm/@tensorflow/tfjs"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@tensorflow-models/posenet"></script>
+    <script src="script.js"></script>
+  </body>
+</html>
