@@ -22,6 +22,7 @@ Live preview on GitHub : `https://elecninja.github.io/Project-DEPI/index.html`
 - Responsive, adapt to different screen sizes with Mobile Navigation Menu
 - Home page with featured products and image slider
 - Category pages for men's and women's clothing
+- Experimental Try-on-clothes functionality
 - Product detail pages
 - About page
 - Contact page
