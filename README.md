@@ -17,6 +17,7 @@ Live preview on GitHub : `https://elecninja.github.io/Project-DEPI/index.html`
 - CSS
 - JavaScript
 - Ionicons
+- PoseNet (a pre-trained machine learning model)
 - TensorFlow.js (for Pose detection)
 
 ## Current Functionality
