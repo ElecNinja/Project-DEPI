@@ -22,15 +22,6 @@ Live preview on GitHub : `https://elecninja.github.io/Project-DEPI/index.html`
 - Responsive, adapt to different screen sizes with Mobile Navigation Menu
 - Home page with featured products and image slider
 - Category pages for men's and women's clothing
-
-- Experimental Try-on-clothes functionality
-- How it Works:
-
-  - HTML Setup: Include the TensorFlow.js and PoseNet scripts.
-  - Capture Camera Feed: Use the HTML5 video element to capture the live video stream.
-  - Pose Detection: Use PoseNet to detect the user’s body pose.
-  - Overlay Clothes: Load and position clothing images based on the detected pose.
-
 - Product detail pages
 - About page
 - Contact page
@@ -43,6 +34,19 @@ Live preview on GitHub : `https://elecninja.github.io/Project-DEPI/index.html`
 - run minify.js from the terminal to minify the CSS code
 - User account page (My Account)
 - Terms and conditions page
+
+- _Experimental Try-on-clothes functionality_
+
+## How It Works
+
+1. **Camera Setup**: The app requests access to the user's webcam using the MediaDevices API. The live video feed is displayed in the video element.
+2. **Pose Detection**: PoseNet (a pre-trained machine learning model) is loaded using TensorFlow.js. It estimates the user's body pose from the video feed in real-time.
+
+3. **Overlay T-Shirt**: Based on the detected pose, the t-shirt image is dynamically resized and positioned over the user's body using the Canvas API.
+
+4. **Color and Opacity Customization**: Users can modify the color of the t-shirt using a color picker and adjust its opacity using a range slider.
+
+5. **Capture Snapshot**: The canvas is merged with the video feed to create a snapshot image, which can be downloaded by the user.
 
 ## Project Structure
 
@@ -66,6 +70,12 @@ Online-Clothing-Store/
 │ └── darkmode.js
 │ └── heart.js
 │ └── script.js
+├── Try-on-app
+│ └── index.html
+│ └── README.md
+│ └── script.js
+│ └── style.css
+│ └── white-tshirt.png
 ├── about.html
 ├── blog.html
 ├── Categories.html
