@@ -16,6 +16,8 @@ Live preview on GitHub : `https://elecninja.github.io/Project-DEPI/index.html`
 - HTML
 - CSS
 - JavaScript
+- Ionicons
+- TensorFlow.js (for Pose detection)
 
 ## Current Functionality
 
