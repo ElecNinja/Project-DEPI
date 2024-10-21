@@ -48,6 +48,14 @@ Live preview on GitHub : `https://elecninja.github.io/Project-DEPI/index.html`
 
 5. **Capture Snapshot**: The canvas is merged with the video feed to create a snapshot image, which can be downloaded by the user.
 
+## Ionicons Library
+
+- Benefits:
+
+1. **Wide Icon Selection**: You can use hundreds of customizable icons in your web app without needing to create or load individual image files.
+2. **Cross-Browser Compatibility**: The combination of type="module" and nomodule ensures that both modern and older browsers can load the appropriate version of the icon library.
+3. **Performance Optimization**: Modern browsers use the ES module version (ionicons.esm.js), which is more efficient, while older browsers fall back to a more compatible version (ionicons.js).
+
 ## Project Structure
 
 Online-Clothing-Store/
