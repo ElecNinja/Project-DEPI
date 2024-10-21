@@ -83,25 +83,24 @@ const slideContainer = document.querySelector(".content-slide");
 const numberOfSlides = 7;
 
 // Loop through to create the desired number of slides
-function createSlides(){
+function createSlides() {
   for (let i = 0; i < numberOfSlides; i++) {
-  // Create a new <div> element for each slide
-  const slideDiv = document.createElement("div");
+    // Create a new <div> element for each slide
+    const slideDiv = document.createElement("div");
 
-  // Set the text content of the newly created <div> to the value stored in slideContent
-  slideDiv.textContent = slideContent;
-  // slideDiv.classList.add('content-slide');
+    // Set the text content of the newly created <div> to the value stored in slideContent
+    slideDiv.textContent = slideContent;
+    // slideDiv.classList.add('content-slide');
 
-  // Append the newly created <div> as a child to the slide container in the DOM
-  slideContainer.appendChild(slideDiv);
-}}
+    // Append the newly created <div> as a child to the slide container in the DOM
+    slideContainer.appendChild(slideDiv);
+  }
+}
 
 createSlides();
 
-
 var copy = document.querySelector(".content-slide").cloneNode(true);
-    document.querySelector(".content").appendChild(copy)
-
+document.querySelector(".content").appendChild(copy);
 
 // Go to top functionality
 window.onscroll = function () {
