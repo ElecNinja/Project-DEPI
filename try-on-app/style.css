@@ -6,8 +6,7 @@ body {
   min-height: 100vh;
   text-align: center;
   font-family: "Arial", sans-serif;
-  /* background-color: #f4f4f4; */
-  background: url("/assets/images/blog-1.jpg");
+  background-color: #b0ffd9;
   color: #333;
   margin: 0;
   padding: 20px;
