@@ -94,7 +94,7 @@ Online-Clothing-Store/
 
 ## Team Members and Responsibilities
 
-- Mohamed: Home, about, contact, README
+- Mohamed: Home, about, contact, README, Try-On App
 - Yehia: Cart, CSS, view Blog
 - Kerolos: All products, All categories, all blog
 - Youssef: My account, login, register, view products
