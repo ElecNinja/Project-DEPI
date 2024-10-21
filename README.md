@@ -35,9 +35,9 @@ Live preview on GitHub : `https://elecninja.github.io/Project-DEPI/index.html`
 - User account page (My Account)
 - Terms and conditions page
 
-- _Experimental Try-on-clothes functionality_
+## Experimental Try-on-clothes functionality
 
-## How It Works
+- How It Works
 
 1. **Camera Setup**: The app requests access to the user's webcam using the MediaDevices API. The live video feed is displayed in the video element.
 2. **Pose Detection**: PoseNet (a pre-trained machine learning model) is loaded using TensorFlow.js. It estimates the user's body pose from the video feed in real-time.
