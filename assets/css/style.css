@@ -3109,13 +3109,10 @@ footer {
   color: inherit;
 }
 
-.categories h2 {
-  color: hsl(353, 100%, 78%);
-}
-
 /* Contact Styles */
-.contact-us .page-title {
+.page-title {
   color: hsl(353, 100%, 78%);
+  padding-top: 40px;
 }
 
 .icon-boxs {
@@ -3171,34 +3168,34 @@ footer {
   padding: 10px;
 }
 .address-info p,
-      .phone-info p,
-      .email-info p {
-        margin-bottom: 5px;
-      }
+.phone-info p,
+.email-info p {
+  margin-bottom: 5px;
+}
 
-      .social-links ul {
-        list-style: none;
-        padding: 0;
-        margin: 0;
-      }
+.social-links ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
 
-      .social-links li {
-        display: inline-block;
-        margin-right: 10px;
-      }
+.social-links li {
+  display: inline-block;
+  margin-right: 10px;
+}
 
-      .map img {
-        width: 100%;
-        height: auto;
-      }
-      .map {
-        display: flex;
-        justify-content: center;
-      }
+.map img {
+  width: 100%;
+  height: auto;
+}
+.map {
+  display: flex;
+  justify-content: center;
+}
 
-      .map-iframe {
-        border: 1px solid hsl(353, 100%, 78%);
-      }
+.map-iframe {
+  border: 1px solid hsl(353, 100%, 78%);
+}
 
 /* Terms and conditions Styles */
 
@@ -3209,7 +3206,7 @@ footer {
 }
 
 .container2 h1,
-.container2 h3{
+.container2 h3 {
   color: #3498db;
   padding: 20px 40px;
 }
@@ -3300,7 +3297,7 @@ header h1 {
   text-decoration: none;
   border-radius: 5px;
 }
-.banner-btns:hover{
+.banner-btns:hover {
   background-color: #1f73ae;
 }
 
@@ -3371,13 +3368,13 @@ header h1 {
   color: hsl(353, 100%, 78%);
 }
 .input-group input,
-      .input-group textarea {
-        width: 100%;
-        padding: 10px;
-        border: 1px solid #ccc;
-        border-radius: 5px;
-        margin-bottom: 10px;
-      }
+.input-group textarea {
+  width: 100%;
+  padding: 10px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  margin-bottom: 10px;
+}
 .about-us .page-title {
   color: hsl(353, 100%, 78%);
 }
@@ -3490,4 +3487,3 @@ header h1 {
 }
 
 /* Category Women Styling */
-
