@@ -71,36 +71,36 @@ for (let i = 0; i < accordionBtn.length; i++) {
   });
 }
 
-// top banner slider
-// *Define the content that will be repeated in each slide
-const slideContent =
-  "Buy One Get One Free on all fashion products! Limited time offer!";
+// // top banner slider
+// // *Define the content that will be repeated in each slide
+// const slideContent =
+//   "Buy One Get One Free on all fashion products! Limited time offer!";
 
-// Get the container where the slides will be inserted. This is the div with the id "slideContainer"
-const slideContainer = document.querySelector(".content-slide");
+// // Get the container where the slides will be inserted. This is the div with the id "slideContainer"
+// const slideContainer = document.querySelector(".content-slide");
 
-// Define the number of slides to be created. You can adjust this number to create more or fewer slides
-const numberOfSlides = 7;
+// // Define the number of slides to be created. You can adjust this number to create more or fewer slides
+// const numberOfSlides = 7;
 
-// Loop through to create the desired number of slides
-function createSlides() {
-  for (let i = 0; i < numberOfSlides; i++) {
-    // Create a new <div> element for each slide
-    const slideDiv = document.createElement("div");
+// // Loop through to create the desired number of slides
+// function createSlides() {
+//   for (let i = 0; i < numberOfSlides; i++) {
+//     // Create a new <div> element for each slide
+//     const slideDiv = document.createElement("div");
 
-    // Set the text content of the newly created <div> to the value stored in slideContent
-    slideDiv.textContent = slideContent;
-    // slideDiv.classList.add('content-slide');
+//     // Set the text content of the newly created <div> to the value stored in slideContent
+//     slideDiv.textContent = slideContent;
+//     // slideDiv.classList.add('content-slide');
 
-    // Append the newly created <div> as a child to the slide container in the DOM
-    slideContainer.appendChild(slideDiv);
-  }
-}
+//     // Append the newly created <div> as a child to the slide container in the DOM
+//     slideContainer.appendChild(slideDiv);
+//   }
+// }
 
-createSlides();
+// createSlides();
 
-var copy = document.querySelector(".content-slide").cloneNode(true);
-document.querySelector(".content").appendChild(copy);
+// var copy = document.querySelector(".content-slide").cloneNode(true);
+// document.querySelector(".content").appendChild(copy);
 
 // Go to top functionality
 window.onscroll = function () {
