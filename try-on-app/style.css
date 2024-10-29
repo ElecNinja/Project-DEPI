@@ -6,11 +6,27 @@ body {
   min-height: 100vh;
   text-align: center;
   font-family: "Arial", sans-serif;
-  background-color: #3b89d6;
+  /* Replace the background-color with a background image */
+  background-image: url("../assets/images/banner-1.jpg");
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
   color: #333;
   margin: 0;
   padding: 20px;
   position: relative;
+}
+
+/* Add a semi-transparent overlay to improve text readability */
+body::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-color: rgba(255, 255, 255, 0.8);
+  z-index: -1;
 }
 
 h1 {
