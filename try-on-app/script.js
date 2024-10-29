@@ -57,8 +57,8 @@ async function detectPose(model) {
     torsoHeight = leftHip.position.y - leftShoulder.position.y;
 
     // Add a scaling factor to make the t-shirt wider and taller
-    const widthFactor = 2.3; // Increase width by 30%
-    const heightFactor = 1.4; // Increase height by 20%
+    const widthFactor = 2.2; // Increase width by 30%
+    const heightFactor = 1.2; // Increase height by 20%
 
     const adjustedWidth = shoulderWidth * widthFactor;
     const adjustedHeight = torsoHeight * heightFactor;
