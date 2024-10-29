@@ -39,6 +39,8 @@ An experimental virtual try-on clothes app that uses the camera to detect a user
 
 3. Allow camera access to start using the app.
 
+4. Keep a distance of at least one meter from the camera to ensure accurate pose detection.
+
 ### Folder Structure
 
 Elite-Wear-Try-On/
