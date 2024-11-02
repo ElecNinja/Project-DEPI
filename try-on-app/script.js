@@ -5,10 +5,14 @@ const colorPicker = document.getElementById("colorPicker");
 const captureButton = document.getElementById("capture");
 const opacitySlider = document.getElementById("opacitySlider");
 const resetButton = document.getElementById("reset");
+const widthSlider = document.getElementById("widthSlider");
+const heightSlider = document.getElementById("heightSlider");
+const widthValue = document.getElementById("widthValue");
+const heightValue = document.getElementById("heightValue");
 
 // Load t-shirt image
 const clothingImg = new Image();
-clothingImg.src = "white-tshirt.png"; // Default to white t-shirt
+clothingImg.src = "white-tshirt.png";
 
 let isDragging = false;
 let offsetX, offsetY;
@@ -17,7 +21,15 @@ let initialLeftShoulderY = 0;
 let shoulderWidth = 0;
 let torsoHeight = 0;
 
-// Initialize video stream from the camera
+// Width and height slider event listeners
+widthSlider.addEventListener("input", function () {
+  widthValue.textContent = this.value;
+});
+
+heightSlider.addEventListener("input", function () {
+  heightValue.textContent = this.value;
+});
+
 async function setupCamera() {
   const stream = await navigator.mediaDevices.getUserMedia({
     video: true,
@@ -31,20 +43,17 @@ async function setupCamera() {
   });
 }
 
-// Load PoseNet model
 async function loadPosenet() {
   return await posenet.load();
 }
 
-// Estimate pose and draw the clothing image on the body
 async function detectPose(model) {
   const pose = await model.estimateSinglePose(video, {
     flipHorizontal: false,
   });
 
-  ctx.clearRect(0, 0, canvas.width, canvas.height); // Clear previous frame
+  ctx.clearRect(0, 0, canvas.width, canvas.height);
 
-  // Get keypoints for the shoulders and hips
   const keypoints = pose.keypoints;
   const leftShoulder = keypoints.find((k) => k.part === "leftShoulder");
   const rightShoulder = keypoints.find((k) => k.part === "rightShoulder");
@@ -52,25 +61,22 @@ async function detectPose(model) {
   const rightHip = keypoints.find((k) => k.part === "rightHip");
 
   if (leftShoulder && rightShoulder && leftHip && rightHip) {
-    // Calculate shoulder width and torso height
     shoulderWidth = rightShoulder.position.x - leftShoulder.position.x;
     torsoHeight = leftHip.position.y - leftShoulder.position.y;
 
-    // Add a scaling factor to make the t-shirt wider and taller
-    const widthFactor = 2.2; // Increase width by 30%
-    const heightFactor = 1.2; // Increase height by 20%
+    // Use slider values for factors
+    const widthFactor = parseFloat(widthSlider.value);
+    const heightFactor = parseFloat(heightSlider.value);
 
     const adjustedWidth = shoulderWidth * widthFactor;
     const adjustedHeight = torsoHeight * heightFactor;
 
-    // Store initial position for reset
     if (initialLeftShoulderX === 0 && initialLeftShoulderY === 0) {
       initialLeftShoulderX = leftShoulder.position.x;
       initialLeftShoulderY = leftShoulder.position.y;
     }
 
-    // Draw the t-shirt with adjusted width and height
-    ctx.globalAlpha = opacitySlider.value; // Apply opacity
+    ctx.globalAlpha = opacitySlider.value;
     ctx.drawImage(
       clothingImg,
       leftShoulder.position.x - (adjustedWidth - shoulderWidth) / 2,
@@ -79,8 +85,7 @@ async function detectPose(model) {
       adjustedHeight
     );
 
-    // Apply color customization
-    ctx.globalCompositeOperation = "source-in"; // Apply color only to clothing
+    ctx.globalCompositeOperation = "source-in";
     ctx.fillStyle = colorPicker.value;
     ctx.fillRect(
       leftShoulder.position.x - (adjustedWidth - shoulderWidth) / 2,
@@ -88,12 +93,11 @@ async function detectPose(model) {
       adjustedWidth,
       adjustedHeight
     );
-    ctx.globalCompositeOperation = "source-over"; // Reset blending mode
-    ctx.globalAlpha = 1; // Reset opacity
+    ctx.globalCompositeOperation = "source-over";
+    ctx.globalAlpha = 1;
   }
 }
 
-// Drag and drop functionality for manual clothing adjustment
 canvas.addEventListener("mousedown", function (e) {
   isDragging = true;
   offsetX = e.offsetX;
@@ -102,7 +106,7 @@ canvas.addEventListener("mousedown", function (e) {
 
 canvas.addEventListener("mousemove", function (e) {
   if (isDragging) {
-    ctx.clearRect(0, 0, canvas.width, canvas.height); // Clear canvas for each move
+    ctx.clearRect(0, 0, canvas.width, canvas.height);
     ctx.drawImage(
       clothingImg,
       e.offsetX - offsetX,
@@ -117,32 +121,18 @@ canvas.addEventListener("mouseup", function () {
   isDragging = false;
 });
 
-// Capture the current canvas and download as an image
-// captureButton.addEventListener("click", function () {
-//   const dataURL = canvas.toDataURL();
-//   const link = document.createElement("a");
-//   link.href = dataURL;
-//   link.download = "try-on-snapshot.png";
-//   link.click();
-// });
-
-// Add this function to combine video and canvas
 function captureVideoAndCanvas() {
   const tempCanvas = document.createElement("canvas");
   tempCanvas.width = video.videoWidth;
   tempCanvas.height = video.videoHeight;
   const tempCtx = tempCanvas.getContext("2d");
 
-  // Draw the video frame
   tempCtx.drawImage(video, 0, 0, tempCanvas.width, tempCanvas.height);
-
-  // Draw the canvas content (t-shirt overlay)
   tempCtx.drawImage(canvas, 0, 0, tempCanvas.width, tempCanvas.height);
 
   return tempCanvas.toDataURL("image/png");
 }
 
-// Update the capture button event listener
 captureButton.addEventListener("click", function () {
   const dataURL = captureVideoAndCanvas();
   const link = document.createElement("a");
@@ -151,9 +141,8 @@ captureButton.addEventListener("click", function () {
   link.click();
 });
 
-// Reset the t-shirt position to its initial position
 resetButton.addEventListener("click", function () {
-  ctx.clearRect(0, 0, canvas.width, canvas.height); // Clear canvas
+  ctx.clearRect(0, 0, canvas.width, canvas.height);
   ctx.drawImage(
     clothingImg,
     initialLeftShoulderX,
@@ -163,16 +152,13 @@ resetButton.addEventListener("click", function () {
   );
 });
 
-// Main function to set everything up
 async function main() {
   await setupCamera();
   const posenetModel = await loadPosenet();
 
-  // Keep running pose detection
   setInterval(() => {
     detectPose(posenetModel);
   }, 100);
 }
 
-// Start the app
 main();
